@@ -223,15 +223,11 @@ export default class AboutMe extends React.Component {
                 <br/>
                 <br/>
                 <span className={this.props.BackgroundColour + " aboutMeCategory"}>Nationality:</span>
-                <span className="aboutMeAns">South Korean 🍙</span>
+                <span className="aboutMeAns">Canadian / South Korean 🍙</span>
                 <br/>
                 <br/>
                 <span className={this.props.BackgroundColour + " aboutMeCategory"}>Hometown:</span>
                 <span className="aboutMeAns">Toronto, Canada 🍁</span>
-                <br/>
-                <br/>
-                <span className={this.props.BackgroundColour + " aboutMeCategory"}>Current Home:</span>
-                <span className="aboutMeAns">San Francisco, CA ☀️</span>
                 <p id="aboutMeDesc">
                     Nice to meet you! As you can probably tell, my name is 
                     <b><span className={this.props.LandingColour}> Grace </span></b>

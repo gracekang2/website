@@ -4,6 +4,7 @@
   margin: 0;
   position: relative;
   min-height: 100vh;
+  padding-bottom: 80px;
 }
 
 #landingBitmoji {
@@ -43,12 +44,32 @@
   background-color: #F8878F;
 }
 
+.timeline--wrapper {
+  padding-left: 0!important;
+}
+
+.timeline {
+  margin-top: 0!important;
+  margin-bottom: 0!important;
+  margin-left: -15%!important;
+}
+
 .headingColour5 {
   color: #F4CF5D; 
 }
 
 .backgroundColour5 {
   background-color: #F4CF5D;
+}
+
+.timeline-item-dateinner, .timeline-item-date {
+  -webkit-clip-path: none!important;
+  clip-path: none!important;
+  width: 100%;
+  border-radius: 30px;
+  text-align: right;
+  background: none!important;
+  color: inherit!important;
 }
 
 .headingColour6 {
@@ -98,6 +119,54 @@
   cursor: pointer;
 }
 
+.headerLink a {
+  text-decoration: none;
+}
+
+.colourPaletteLink {
+  float: right;
+  margin-right: 10px;
+}
+
+.colourChoice {
+  display: inline-block;
+  margin-right: 5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  border: 1px solid darkgrey;
+  margin-top: 20px;
+}
+
+.contactMe {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-size: 14px;
+  padding-left: 5px;
+  background-color: floralwhite;
+  opacity: 0.85;
+}
+
+.neonGreen {
+  color: cyan;
+}
+
+.neonPink {
+  color: pink;
+}
+
+.colourChoice.selected {
+  border: 1px solid black;
+}
+
+.colourChoice:hover {
+  cursor: pointer;
+}
+
 #aboutMe, #skillSummary, #codingExperience {
   text-align: left;
   padding-left: 8vw;
@@ -128,6 +197,7 @@
   width: 100%;
   background-color: #342E37;
   border-radius: 8px;
+  padding-bottom: 8px;
 }
 
 #terminalHeader {
@@ -292,6 +362,15 @@ div.command {
   max-height: 70vh !important;
 }
 
+.content {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.linkWrapper {
+  display: inline-block;
+}
+
 @keyframes blink {
   from {
      opacity: 1;
@@ -301,8 +380,77 @@ div.command {
   }
 }
 
-@media (max-width: 700px) {
-  #landing-bitmoji{
+@media (max-width: 1000px) {
+  #landingBitmoji{
+    width: 30vw;
+  }
+}
+
+@media (max-width: 800px) {
+  #landingBitmoji{
+    width: 35vw;
+  }
+}
+
+@media (max-width: 600px) {
+  #landingBitmoji{
+    width: 45vw;
+  }
+}
+
+@media (max-width: 450px) {
+  .linkWrapper {
+    height: 100vh;
+    background-color: floralwhite;
+    padding-top:20px;
+    padding-right: 10px;
+    z-index: 100;
+  }
+
+  #menuClose {
+    float: right;
+  }
+
+  .linkWrapper .headerLink {
+    display: block;
     width: 50vw;
+    padding: 5px;
+    left: 0;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    margin-top: 0px;
+  }
+
+  .colourPaletteLink {
+    display: block;
+    width: 100vw;
+    text-align: right;
+  }
+
+  .linkWrapper {
+    position: fixed;
+    display: none;
+  }
+
+  #menuIcon {
+    position: fixed;
+    top:15px;
+    left: 20px;
+  }
+
+  .colourChoice {
+    margin-top: 0;
+  }
+
+  #landingBitmoji{
+    width: 50vw;
+  }
+}
+
+@media (max-width: 350px) {
+  #landingBitmoji{
+    width: 55vw;
   }
 }

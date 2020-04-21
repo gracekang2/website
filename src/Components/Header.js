@@ -1,30 +1,115 @@
-import React from 'react'
-import ColourSelect from './ColourSelect'
+import React from "react";
+import { HeaderLink } from "./HeaderLink";
+import ColourPalette from "./ColourPalette";
 
 export default class Header extends React.Component {
-    HandleClick = (event) => {
-        this.props.OnLinkClick(event.target.id);
+  pages = [
+    {
+      name: "home",
+      href: "/home"
+    },
+    {
+      name: "about me",
+      href: "/about"
+    },
+    {
+      name: "skills",
+      href: "/skills"
+    },
+    {
+      name: "coding",
+      href: "/code"
     }
-    
-    render() {
-        return (
-            <div id="header">
-                <div className="headerLink">
-                    <ColourSelect ColourChange={this.props.ColourChange} BackgroundColour={this.props.BackgroundColour}></ColourSelect>
-                </div>
-                <div className="headerLink">
-                    <span className={this.props.Colour} id={1} onClick={this.HandleClick}>home</span>
-                </div>
-                <div className="headerLink">
-                    <span className={this.props.Colour} id={2} onClick={this.HandleClick}>about me</span>
-                </div>
-                <div className="headerLink">
-                    <span className={this.props.Colour} id={3} onClick={this.HandleClick}>skills summary</span>
-                </div>
-                <div className="headerLink">
-                    <span className={this.props.Colour} id={4} onClick={this.HandleClick}>coding experience</span>
-                </div>
-            </div>
-        )
-    }
+  ];
+
+  updateDimensions = () => {
+    this.setState(prev => ({
+        Collapsed: window.screen.width <= 450,
+        SmallScreen: window.screen.width <= 450,
+      }));
+  };
+
+  OnMenuIconClick = () => {
+    this.setState(prev => ({
+      Collapsed: false
+    }));
+  };
+
+  OnMenuCloseClick = () => {
+    this.setState(prev => ({
+      Collapsed: true
+    }));
+  };
+
+
+  componentWillMount() {
+      this.updateDimensions();
+  }
+
+  componentDidMount() {
+      window.addEventListener("resize", this.updateDimensions);
+  }
+
+  componentWillUnmount() {
+      window.removeEventListener("resize", this.updateDimensions);
+  }
+
+  render() {
+    return (
+      <div id="header">
+        <svg
+          id="menuIcon"
+          style={{
+            width: "24px",
+            height: "24px",
+            display: this.state.Collapsed ? "inline-block" : "none"
+          }}
+          viewBox="0 0 24 24"
+          onClick={this.OnMenuIconClick}
+        >
+          <path
+            fill="currentColor"
+            d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"
+          />
+        </svg>
+        <div
+          className="linkWrapper"
+          style={{ display: !this.state.Collapsed ? "inline-block" : "none" }}
+        >
+          <svg
+            style={{
+              width: "24px",
+              height: "24px",
+              display: this.state.SmallScreen && !this.state.Collapsed ? "inline-block" : "none"
+            }}
+            viewBox="0 0 24 24"
+            id="menuClose"
+            onClick={this.OnMenuCloseClick}
+          >
+            <path
+              fill="currentColor"
+              d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"
+            />
+          </svg>
+          <br />
+          {this.pages.map(page => {
+            return (
+              <HeaderLink
+                Href={page.href}
+                Colour={this.props.Colour}
+                Name={page.name}
+                OnLinkClick={this.props.OnLinkClick}
+              />
+            );
+          })}
+        </div>
+        <div className="headerLink colourPaletteLink">
+          <ColourPalette
+            Current={this.props.BackgroundColour}
+            ColourChange={this.props.ColourChange}
+          />
+        </div>
+      </div>
+    );
+  }
 }
