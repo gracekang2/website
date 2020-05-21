@@ -1,6 +1,6 @@
 .app {
   text-align: center;
-  background-color: #f8f7ef;
+  background-color: #f6f8f7;
   margin: 0;
   position: relative;
   min-height: 100vh;
@@ -12,7 +12,7 @@
 }
 
 .headingColour1 {
-  color: #7a6382;
+  color: #15239f;
 }
 
 .backgroundColour1 {
@@ -380,16 +380,8 @@ div.command {
 }
 
 #landingTextDiv span {
-  display: flex;
   justify-content: center;
   align-self: center;
-}
-
-#color1 {
-  stop-color: red
-}
-#color2 {
-  stop-color: blue
 }
 
 @keyframes blink {
