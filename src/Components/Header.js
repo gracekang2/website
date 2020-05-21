@@ -103,12 +103,6 @@ export default class Header extends React.Component {
             );
           })}
         </div>
-        <div className="headerLink colourPaletteLink">
-          <ColourPalette
-            Current={this.props.BackgroundColour}
-            ColourChange={this.props.ColourChange}
-          />
-        </div>
       </div>
     );
   }

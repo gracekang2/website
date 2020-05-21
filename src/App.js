@@ -8,14 +8,6 @@ import CodingExperience from "./Components/CodingExperience";
 import { ContactMe } from "./Components/ContactMe";
 
 export default class App extends React.Component {
-  ColourChange = value => {
-    this.setState(prev => ({
-      HeadingColour: "headingColour" + value,
-      BackgroundColour: "backgroundColour" + value,
-      PictureURL: "Images/bitmoji_transparent_" + value + ".png"
-    }));
-  };
-
   OnLinkClick = value => {
     this.setState(prev => ({
       Path: value
@@ -84,9 +76,6 @@ export default class App extends React.Component {
           )}
         </div>
         <ContactMe Picture={this.state.PictureURL} />
-        <div>
-          Fix coding experineces <br />
-        </div>
       </div>
     );
   }

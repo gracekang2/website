@@ -6,19 +6,25 @@ export default class WorkExperience extends React.Component {
     return (
       <div>
         <Timeline lineColor={"#ddd"}>
-          <TimelineItem dateText="Spring 2019" className={this.props.Color + " " + this.props.BackgroundColor}>
-            <h3>Scotiabank - Full Stack Web Developer</h3>
-            <h4>Toronto, Canada</h4>
-            <p>
-              Heehee
-            </p>
-          </TimelineItem>
-          <TimelineItem dateText="Winter 2020" className={this.props.Color + " " + this.props.BackgroundColor}>
-            <h3>Wish - Software Engineering Intern</h3>
-            <h4>San Francisco, California</h4>
+          <TimelineItem
+            dateText="Winter 2020"
+            className={this.props.Color + " " + this.props.BackgroundColor}
+          >
+            <h4><span className={this.props.BackgroundColor + " companyBadge"}>Wish</span></h4>
+            <h4>Software Engineering Intern</h4>
+            <h5>San Francisco, California</h5>
             <p>
               Worked on <b>Product Payments</b> team
             </p>
+          </TimelineItem>
+          <TimelineItem
+            dateText="Spring 2019"
+            className={this.props.Color + " " + this.props.BackgroundColor}
+          >
+            <h4><span className={this.props.BackgroundColor + " companyBadge"}>Scotiabank</span></h4>
+            <h4>Full Stack Web Developer</h4>
+            <h5>Toronto, Canada</h5>
+            <p>Heehee</p>
           </TimelineItem>
         </Timeline>
       </div>

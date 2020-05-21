@@ -1,10 +1,9 @@
 .app {
   text-align: center;
-  background-color: #F8F7EF;
+  background-color: #f8f7ef;
   margin: 0;
   position: relative;
   min-height: 100vh;
-  padding-bottom: 80px;
 }
 
 #landingBitmoji {
@@ -13,71 +12,32 @@
 }
 
 .headingColour1 {
-  color: #FFA286;
+  color: #7a6382;
 }
 
 .backgroundColour1 {
-  background-color: #FFA286;
-}
-
-.headingColour2 {
-  color: #B9A6E0;
-}
-
-.backgroundColour2 {
-  background-color: #B9A6E0;
-}
-
-.headingColour3 {
-  color: #70CEE4; 
-}
-
-.backgroundColour3 {
-  background-color: #70CEE4;
-}
-
-.headingColour4 {
-  color: #F8878F; 
-}
-
-.backgroundColour4 {
-  background-color: #F8878F;
+  background-color: #d8cad9;
 }
 
 .timeline--wrapper {
-  padding-left: 0!important;
+  padding-left: 0 !important;
 }
 
 .timeline {
-  margin-top: 0!important;
-  margin-bottom: 0!important;
-  margin-left: -15%!important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  margin-left: -15% !important;
 }
 
-.headingColour5 {
-  color: #F4CF5D; 
-}
-
-.backgroundColour5 {
-  background-color: #F4CF5D;
-}
-
-.timeline-item-dateinner, .timeline-item-date {
-  -webkit-clip-path: none!important;
-  clip-path: none!important;
+.timeline-item-dateinner,
+.timeline-item-date {
+  -webkit-clip-path: none !important;
+  clip-path: none !important;
   width: 100%;
   border-radius: 30px;
   text-align: right;
-  background: none!important;
-  color: inherit!important;
-}
-
-.headingColour6 {
-  color: #B4E55C; 
-}
-
-.backgroundColour6 {
-  background-color: #B4E55C;
+  background: none !important;
+  color: inherit !important;
 }
 
 #colourSelect {
@@ -102,6 +62,7 @@
 
 #header {
   text-align: left;
+  position: absolute;
 }
 
 .headerLink {
@@ -167,7 +128,9 @@
   cursor: pointer;
 }
 
-#aboutMe, #skillSummary, #codingExperience {
+#aboutMe,
+#skillSummary,
+#codingExperience {
   text-align: left;
   padding-left: 8vw;
   padding-right: 13vw;
@@ -195,13 +158,13 @@
 
 #terminal {
   width: 100%;
-  background-color: #342E37;
+  background-color: #342e37;
   border-radius: 8px;
   padding-bottom: 8px;
 }
 
 #terminalHeader {
-  height:  5%;
+  height: 5%;
   width: 100%;
   border-top-right-radius: 8px;
   border-top-left-radius: 8px;
@@ -229,24 +192,24 @@
 }
 
 #redBtn {
-  background-color: #DC0000;
+  background-color: #dc0000;
 }
 
 #yellowBtn {
-  background-color: #FBCC38;
+  background-color: #fbcc38;
 }
 
 #greenBtn {
-  background-color: #82DE3A;
+  background-color: #82de3a;
 }
 
 .greenTxt {
-  color: #82DE3A;
+  color: #82de3a;
   font-weight: 500;
 }
 
 .yellowTxt {
-  color: #FBCC38;
+  color: #fbcc38;
   font-weight: 500;
 }
 
@@ -282,7 +245,7 @@ div.command {
 
 #webprojs * {
   text-align: left;
-  font-family: 'Oxygen', sans-serif;
+  font-family: "Oxygen", sans-serif;
 }
 
 #webprojs #navrow {
@@ -293,7 +256,8 @@ div.command {
   border-right: 1px solid black;
 }
 
-#webleftbtn:hover, #webrightbtn:hover {
+#webleftbtn:hover,
+#webrightbtn:hover {
   cursor: pointer;
 }
 
@@ -342,10 +306,10 @@ div.command {
 
 #__ReactUnityWebGL_1__ {
   border-radius: 4px;
-  height: 50vh!important;
-  width: 38vw!important;
-  margin-left: auto!important;
-  margin-right: auto!important;
+  height: 50vh !important;
+  width: 38vw !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 #__ReactUnityWebGL_1__ canvas {
@@ -353,47 +317,115 @@ div.command {
 }
 
 #__ReactUnityWebGL_1__ div {
-  border: 2px solid black!important;
-  background-color: white!important;
+  border: 2px solid black !important;
+  background-color: white !important;
   color: black;
 }
 
-#ecostoreimg img{
+#ecostoreimg img {
   max-height: 70vh !important;
-}
-
-.content {
-  padding-left: 30px;
-  padding-right: 30px;
 }
 
 .linkWrapper {
   display: inline-block;
 }
 
+#ecostoreimg {
+  text-align: center;
+}
+
+.ecostoreArrow {
+  width: 10px;
+}
+
+.ecostoreArrow:hover {
+  cursor: pointer;
+}
+
+.companyBadge {
+  padding: 0 7px;
+  border-radius: 10px;
+}
+
+#landingPhotoDiv {
+  max-width: 30%;
+  display: flex;
+}
+
+.landingPage {
+  background: url("blob.svg") no-repeat fixed;
+  padding-top: 100px;
+  height: calc(100vh - 100px);
+}
+
+#landingWrapper {
+  display: flex;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+#landingPhoto {
+  width: 100%;
+  vertical-align: middle;
+}
+
+#landingTextDiv {
+  display: flex;
+  font-size: 32px;
+  flex-grow: 1;
+  padding: 50px;
+  color: white;
+  text-align: left;
+  font-family: 'VT323', monospace;
+}
+
+#landingTextDiv span {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+#color1 {
+  stop-color: red
+}
+#color2 {
+  stop-color: blue
+}
+
 @keyframes blink {
   from {
-     opacity: 1;
+    opacity: 1;
   }
   to {
-     opacity: 0;
+    opacity: 0;
   }
 }
 
 @media (max-width: 1000px) {
-  #landingBitmoji{
+  #landingBitmoji {
     width: 30vw;
   }
 }
 
 @media (max-width: 800px) {
-  #landingBitmoji{
+  #landingBitmoji {
     width: 35vw;
   }
 }
 
+@media (max-width: 769px) {
+  .timeline-item-dateinner {
+    text-align: left;
+    margin-left: -10px !important;
+  }
+
+  .timeline--wrapper {
+    margin-left: 10%;
+  }
+}
+
 @media (max-width: 600px) {
-  #landingBitmoji{
+  #landingBitmoji {
     width: 45vw;
   }
 }
@@ -402,7 +434,7 @@ div.command {
   .linkWrapper {
     height: 100vh;
     background-color: floralwhite;
-    padding-top:20px;
+    padding-top: 20px;
     padding-right: 10px;
     z-index: 100;
   }
@@ -436,7 +468,7 @@ div.command {
 
   #menuIcon {
     position: fixed;
-    top:15px;
+    top: 15px;
     left: 20px;
   }
 
@@ -444,13 +476,17 @@ div.command {
     margin-top: 0;
   }
 
-  #landingBitmoji{
+  #landingBitmoji {
     width: 50vw;
+  }
+
+  .timeline-item-date {
+    width: 100% !important;
   }
 }
 
 @media (max-width: 350px) {
-  #landingBitmoji{
+  #landingBitmoji {
     width: 55vw;
   }
 }
