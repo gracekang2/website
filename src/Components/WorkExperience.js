@@ -32,7 +32,7 @@ export default class WorkExperience extends React.Component {
               <br/>
               <i>Winter 2020 - San Francisco, California</i>
               <p>
-                I was on the Product Payments team
+                Product Payments team
               </p>
             </> : <></>
           }
@@ -46,7 +46,7 @@ export default class WorkExperience extends React.Component {
               <br/>
               <i>Summer 2019 - Toronto, Canada</i>
               <p>
-                I was on the GBM hehklfdslf;l
+                GBM Web Team
               </p>
             </> : <></>
           }

@@ -129,6 +129,20 @@ export default class AboutMe extends React.Component {
             height: 4
         }
     ]
+
+    componentDidMount() {
+        fetch("https://currently-reads.now.sh/reading/114484403/json")
+        .then(res => res.json())
+        .then(data => {
+            if (data && data.length > 0) {
+                this.setState({currentBook: data[0] && data[0].book});
+                console.log(data[0] && data[0].book);
+            } else {
+                this.setState({currentBook: undefined});
+            }
+        })
+        .catch(console.log)
+    }
     
     render() {
         return (
