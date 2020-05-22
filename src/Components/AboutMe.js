@@ -4,14 +4,9 @@ import Gallery from 'react-photo-gallery'
 export default class AboutMe extends React.Component {
     photos = [
         {
-            src: 'Images/about_me_horizontal_1.jpg',
-            width: 4,
-            height: 3
-        },
-        {
-            src: 'Images/about_me_vertical_1.jpg',
+            src: 'Images/about_me_vertical_21.jpg',
             width: 3,
-            height: 4
+            height: 4.5
         },
         {
             src: 'Images/about_me_vertical_2.jpg',
@@ -19,12 +14,12 @@ export default class AboutMe extends React.Component {
             height: 4
         },
         {
-            src: 'Images/about_me_vertical_3.jpg',
+            src: 'Images/about_me_vertical_6.jpg',
             width: 3,
             height: 4
         },
         {
-            src: 'Images/about_me_vertical_4.jpg',
+            src: 'Images/about_me_vertical_23.jpg',
             width: 3,
             height: 4
         },
@@ -34,47 +29,7 @@ export default class AboutMe extends React.Component {
             height: 4
         },
         {
-            src: 'Images/about_me_horizontal_2.jpg',
-            width: 4,
-            height: 3
-        },
-        {
-            src: 'Images/about_me_vertical_6.jpg',
-            width: 3,
-            height: 4
-        },
-        {
-            src: 'Images/about_me_vertical_7.jpg',
-            width: 3,
-            height: 4
-        },
-        {
-            src: 'Images/about_me_horizontal_3.jpg',
-            width: 4,
-            height: 3
-        },
-        {
-            src: 'Images/about_me_vertical_23.jpg',
-            width: 3,
-            height: 4
-        },
-        {
-            src: 'Images/about_me_vertical_24.jpg',
-            width: 3,
-            height: 5
-        },
-        {
-            src: 'Images/about_me_horizontal_4.jpg',
-            width: 4,
-            height: 3
-        },
-        {
             src: 'Images/about_me_vertical_25.jpg',
-            width: 3,
-            height: 4
-        },
-        {
-            src: 'Images/about_me_vertical_26.jpg',
             width: 3,
             height: 4
         },
@@ -99,6 +54,16 @@ export default class AboutMe extends React.Component {
             height: 4
         },
         {
+            src: 'Images/about_me_vertical_17.jpg',
+            width: 3,
+            height: 4
+        },
+        {
+            src: 'Images/about_me_vertical_3.jpg',
+            width: 3,
+            height: 4
+        },
+        {
             src: 'Images/about_me_vertical_32.jpg',
             width: 3,
             height: 4
@@ -114,19 +79,9 @@ export default class AboutMe extends React.Component {
             height: 4
         },
         {
-            src: 'Images/about_me_horizontal_6.jpg',
-            width: 4,
-            height: 3
-        },
-        {
             src: 'Images/about_me_vertical_9.jpg',
             width: 3,
             height: 4
-        },
-        {
-            src: 'Images/about_me_horizontal_7.jpg',
-            width: 4,
-            height: 3
         },
         {
             src: 'Images/about_me_vertical_10.jpg',
@@ -149,24 +104,9 @@ export default class AboutMe extends React.Component {
             height: 4
         },
         {
-            src: 'Images/about_me_horizontal_9.jpg',
-            width: 4,
-            height: 3
-        },
-        {
-            src: 'Images/about_me_vertical_14.jpg',
-            width: 3,
-            height: 4
-        },
-        {
             src: 'Images/about_me_vertical_15.jpg',
             width: 3,
             height: 4
-        },
-        {
-            src: 'Images/about_me_horizontal_10.jpg',
-            width: 4.5,
-            height: 3
         },
         {
             src: 'Images/about_me_vertical_34.jpg',
@@ -179,32 +119,12 @@ export default class AboutMe extends React.Component {
             height: 4
         },
         {
-            src: 'Images/about_me_vertical_18.jpg',
-            width: 3,
-            height: 4
-        },
-        {
-            src: 'Images/about_me_vertical_17.jpg',
-            width: 3,
-            height: 4
-        },
-        {
             src: 'Images/about_me_vertical_19.jpg',
             width: 3,
             height: 4
         },
         {
             src: 'Images/about_me_vertical_20.jpg',
-            width: 3,
-            height: 4
-        },
-        {
-            src: 'Images/about_me_vertical_21.jpg',
-            width: 3,
-            height: 4.5
-        },
-        {
-            src: 'Images/about_me_vertical_22.jpg',
             width: 3,
             height: 4
         }

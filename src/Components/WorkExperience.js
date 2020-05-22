@@ -1,32 +1,56 @@
 import React from "react";
-import { Timeline, TimelineItem } from "vertical-timeline-component-for-react";
 
 export default class WorkExperience extends React.Component {
+  OnTileClick = (event) => {
+    if (event.target.id === "workTile1") {
+      this.setState((prev) => ({
+        Tile1Expanded: !prev.Tile1Expanded,
+        Tile2Expanded: false,
+      }));
+    } else if (event.target.id === "workTile2") {
+      this.setState((prev) => ({
+        Tile2Expanded: !prev.Tile2Expanded,
+        Tile1Expanded: false,
+      }));
+    }
+  };
+
+  state = {
+    Tile1Expanded: false,
+    Tile2Expanded: false,
+  };
+
   render() {
     return (
-      <div>
-        <Timeline lineColor={"#ddd"}>
-          <TimelineItem
-            dateText="Winter 2020"
-            className={this.props.Color + " " + this.props.BackgroundColor}
-          >
-            <h4><span className={this.props.BackgroundColor + " companyBadge"}>Wish</span></h4>
-            <h4>Software Engineering Intern</h4>
-            <h5>San Francisco, California</h5>
-            <p>
-              Worked on <b>Product Payments</b> team
-            </p>
-          </TimelineItem>
-          <TimelineItem
-            dateText="Spring 2019"
-            className={this.props.Color + " " + this.props.BackgroundColor}
-          >
-            <h4><span className={this.props.BackgroundColor + " companyBadge"}>Scotiabank</span></h4>
-            <h4>Full Stack Web Developer</h4>
-            <h5>Toronto, Canada</h5>
-            <p>Heehee</p>
-          </TimelineItem>
-        </Timeline>
+      <div id="workTilesWrapper">
+        <div id="workTile1" onClick={this.OnTileClick}>
+          <span className="workTitle">Wish</span>
+          <br />
+          <span className="workCaption">Software Engineering Intern</span>
+          {
+            this.state.Tile1Expanded ? <>
+              <br/>
+              <i>Winter 2020 - San Francisco, California</i>
+              <p>
+                I was on the Product Payments team
+              </p>
+            </> : <></>
+          }
+        </div>
+        <div id="workTile2" onClick={this.OnTileClick}>
+          <span className="workTitle">Scotiabank</span>
+          <br />
+          <span className="workCaption">Full Stack Web Developer</span>
+          {
+            this.state.Tile2Expanded ? <>
+              <br/>
+              <i>Summer 2019 - Toronto, Canada</i>
+              <p>
+                I was on the GBM hehklfdslf;l
+              </p>
+            </> : <></>
+          }
+        </div>
       </div>
     );
   }

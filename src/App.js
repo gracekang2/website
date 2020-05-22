@@ -75,7 +75,7 @@ export default class App extends React.Component {
             this.state.BackgroundColour
           )}
         </div>
-        <ContactMe Picture={this.state.PictureURL} />
+        {/* <ContactMe Picture={this.state.PictureURL} /> */}
       </div>
     );
   }
