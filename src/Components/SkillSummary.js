@@ -17,7 +17,9 @@ export default class SkillSummary extends React.Component {
   libraries = (
     <span>
       <span className="greenTxt">frameworks + libraries: </span>
-      <span className="terminalWhite">['reactJS', 'node.js', 'ASP.NET']</span>
+      <span className="terminalWhite">
+        ['reactJS', 'node.js', 'jQuery', 'ASP.NET']
+      </span>
       <br />
     </span>
   );
@@ -34,10 +36,10 @@ export default class SkillSummary extends React.Component {
     <span>
       <span className="yellowTxt">python: </span>
       <span>
-        used Python 2.7 while interning at Wish as a SWE intern on the product
-        payments team. Worked on various backend tasks using Python, including
-        work on Wish's chatbot, writing oneoff scripts and crons, and different
-        payment procesing tasks.
+        used Python while interning at Wish, as a SWE intern on the Product
+        Payments team. Worked on various backend tasks using Python, including
+        work on Wish's customer support chatbot, writing scripts / crons, and
+        integrating features of Stripe's payment API.
       </span>
     </span>
   );
@@ -47,11 +49,12 @@ export default class SkillSummary extends React.Component {
       <span className="yellowTxt">javascript: </span>
       <span>
         experience using JavaScript for both frontend and backend tasks - used{" "}
-        <span className="greenTxt">jQuery</span> during internship at Scotiabank
-        and used <span className="greenTxt">React</span> to do frontend tasks
-        while interning at Wish. Have also used{" "}
-        <span className="greenTxt">Node.js</span> to build various APIs,
-        including one for a hackathon project called EcoStore.
+        <span className="greenTxt">jQuery</span> during co-op as a full-stack
+        developer at Scotiabank, and used{" "}
+        <span className="greenTxt">React.js </span>
+        while interning at Wish. I also used{" "}
+        <span className="greenTxt">Express/Node.js</span> to build an API for a
+        hackathon project called EcoStore.
       </span>
     </span>
   );
@@ -60,10 +63,11 @@ export default class SkillSummary extends React.Component {
     <span>
       <span className="yellowTxt">C and C++: </span>
       <span>
-        learned both C and C++ during courses at University. Learned C and
-        related topics in CS136 (93%) and C++ in CS246 (95%). In CS246, the
-        final project was a Tetris replica game called BiQuadris that was
-        completed with 2 other group members, which received a grade of 98%.
+        learned both C and C++ in courses at university. Studied C and related
+        topics in <span className="neonGreen">CS136 (93%)</span> and C++ in{" "}
+        <span className="neonGreen">CS246 (95%)</span>. In CS246, the final
+        project was a Tetris replica game called BiQuadris that was completed
+        with 2 other group members, which received a grade of 98%.
       </span>
     </span>
   );
@@ -72,8 +76,9 @@ export default class SkillSummary extends React.Component {
     <span>
       <span className="yellowTxt">C#: </span>
       <span>
-        used C# while interning at ScotiaBank, and used it to create various web
-        forms and razor pages, using Microsoft's ASP.NET framework.
+        gained experience in C# while interning at ScotiaBank as a full-stack
+        web developer, and used it to create various web forms and razor pages,
+        alongside Microsoft's ASP.NET framework.
       </span>
     </span>
   );
@@ -265,8 +270,11 @@ export default class SkillSummary extends React.Component {
           <span className={this.props.LandingColour}>
             Don't have a lot of time?
           </span>{" "}
-          Click <a href="GraceKang_resume.pdf" target="_blank">here</a> to view my
-          resume.
+          Click{" "}
+          <a href="GraceKang_resume.pdf" target="_blank">
+            here
+          </a>{" "}
+          to see my resume.
         </h4>
         <div id="terminal">
           <div id="terminalHeader">
