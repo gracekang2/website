@@ -119,6 +119,11 @@
   transition: transform 0.2s;
 }
 
+#workTile1.expanded,
+#workTile2.expanded {
+  padding: 30px 30px;
+}
+
 #workTile1:hover,
 #workTile2:hover {
   cursor: pointer;
