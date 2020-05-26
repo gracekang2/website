@@ -1,0 +1,100 @@
+/* Skill Summary Page */
+
+#terminal {
+  width: 100%;
+  background-color: #342e37;
+  border-radius: 8px;
+  padding-bottom: 8px;
+}
+
+#terminalHeader {
+  height: 5%;
+  width: 100%;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  background-color: white;
+  position: relative;
+}
+
+.terminalBtn {
+  display: inline-block;
+  margin-left: 10px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+}
+
+#terminalText {
+  padding-left: 1%;
+  font-size: 13px;
+  overflow: auto;
+  height: 60vh;
+}
+
+.terminalWhite {
+  color: white;
+}
+
+#redBtn {
+  background-color: #dc0000;
+}
+
+#yellowBtn {
+  background-color: #fbcc38;
+}
+
+#greenBtn {
+  background-color: #82de3a;
+}
+
+.greenTxt {
+  color: #82de3a;
+  font-weight: 500;
+}
+
+.yellowTxt {
+  color: #fbcc38;
+  font-weight: 500;
+}
+
+.neonGreen {
+  color: cyan;
+}
+
+.neonPink {
+  color: pink;
+}
+
+#cursor {
+  background-color: gray;
+  animation-duration: 500ms;
+  animation-name: blink;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.cmdBtn {
+  display: inline;
+  background-color: transparent;
+  border: none;
+  font-weight: 500;
+  padding-bottom: 0;
+  color: white;
+}
+
+.cmdBtn:hover {
+  cursor: pointer;
+}
+
+div.command {
+  display: inline;
+}
+
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

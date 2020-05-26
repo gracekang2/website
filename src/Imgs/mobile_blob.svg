@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1500pt" height="1000pt" viewBox="140 450 1500 1000" version="1.1">
+<defs>
+    <linearGradient id="gradient" x1="20%" y1="100%" x2="80%" y2="0%">
+	  <stop offset="0%" style="stop-color:#15239f;" />
+	  <stop offset="100%" style="stop-color:#ad8bba;" />
+    </linearGradient>
+  </defs>
+<g id="surface1" fill="url(#gradient)">
+    <path style=" stroke:none;fill-rule:nonzero;fill:#e8dfec;fill-opacity:1;" d="M 627.5 304.5 C 675 307 730.5 321 771 355.5 C 811.5 390 837.5 445 835 498.5 C 833 552.5 802.5 605 754 625.5 C 705.5 646 638.5 635 593 673.5 C 547.5 712 524 800.5 479.5 836 C 435.5 871.5 370.5 853.5 309.5 824 C 249 794.5 192 752.5 155.5 696.5 C 119 640.5 103.5 570.5 119 509 C 134.5 448 182 395.5 219.5 342 C 257.5 288.5 285.5 233 331 229.5 C 376 225.5 438 273.5 489 293 C 540 312 579.5 302.5 627.5 304.5 Z M 627.5 304.5 " transform="translate(-140 -130)"/>
+    <path style=" stroke:none;fill-rule:nonzero;fill:#e8dfec;fill-opacity:1;" d="M 627.5 304.5 C 675 307 730.5 321 771 355.5 C 811.5 390 837.5 445 835 498.5 C 833 552.5 802.5 605 754 625.5 C 705.5 646 638.5 635 593 673.5 C 547.5 712 524 800.5 479.5 836 C 435.5 871.5 370.5 853.5 309.5 824 C 249 794.5 192 752.5 155.5 696.5 C 119 640.5 103.5 570.5 119 509 C 134.5 448 182 395.5 219.5 342 C 257.5 288.5 285.5 233 331 229.5 C 376 225.5 438 273.5 489 293 C 540 312 579.5 302.5 627.5 304.5 Z M 627.5 304.5 " transform="translate(-105 -145)"/>
+    <path style=" stroke:none;fill-rule:nonzero;fill:#d2bfd9;fill-opacity:1;" d="M 627.5 304.5 C 675 307 730.5 321 771 355.5 C 811.5 390 837.5 445 835 498.5 C 833 552.5 802.5 605 754 625.5 C 705.5 646 638.5 635 593 673.5 C 547.5 712 524 800.5 479.5 836 C 435.5 871.5 370.5 853.5 309.5 824 C 249 794.5 192 752.5 155.5 696.5 C 119 640.5 103.5 570.5 119 509 C 134.5 448 182 395.5 219.5 342 C 257.5 288.5 285.5 233 331 229.5 C 376 225.5 438 273.5 489 293 C 540 312 579.5 302.5 627.5 304.5 Z M 627.5 304.5 " transform="translate(-130 -140)"/>
+    <path style=" stroke:none;fill-rule:nonzero;fill:#d2bfd9;fill-opacity:1;" d="M 627.5 304.5 C 675 307 730.5 321 771 355.5 C 811.5 390 837.5 445 835 498.5 C 833 552.5 802.5 605 754 625.5 C 705.5 646 638.5 635 593 673.5 C 547.5 712 524 800.5 479.5 836 C 435.5 871.5 370.5 853.5 309.5 824 C 249 794.5 192 752.5 155.5 696.5 C 119 640.5 103.5 570.5 119 509 C 134.5 448 182 395.5 219.5 342 C 257.5 288.5 285.5 233 331 229.5 C 376 225.5 438 273.5 489 293 C 540 312 579.5 302.5 627.5 304.5 Z M 627.5 304.5 " transform="translate(-112 -147)"/>
+    <path style=" stroke:none;fill-rule:nonzero;fill-opacity:1;" d="M 627.5 304.5 C 675 307 730.5 321 771 355.5 C 811.5 390 837.5 445 835 498.5 C 833 552.5 802.5 605 754 625.5 C 705.5 646 638.5 635 593 673.5 C 547.5 712 524 800.5 479.5 836 C 435.5 871.5 370.5 853.5 309.5 824 C 249 794.5 192 752.5 155.5 696.5 C 119 640.5 103.5 570.5 119 509 C 134.5 448 182 395.5 219.5 342 C 257.5 288.5 285.5 233 331 229.5 C 376 225.5 438 273.5 489 293 C 540 312 579.5 302.5 627.5 304.5 Z M 627.5 304.5 " transform="translate(-120 -150)"/>
+    <circle cx="200" cy="70" r="2" stroke="none" fill="#b5b4fa" transform="translate(200 430)"/>
+    <circle cx="220" cy="120" r="1.5" stroke="none" fill="#b5b4fa" transform="translate(200 410)"/>
+    <circle cx="180" cy="110" r="1.5" stroke="none" fill="#b5b4fa" transform="translate(100 475)"/>
+    <circle cx="200" cy="220" r="2" stroke="none" fill="#b5b4fa" transform="translate(70 400)"/>
+    <circle cx="200" cy="240" r="1.5" stroke="none" fill="#b5b4fa" transform="translate(50 410)"/>
+    <circle cx="200" cy="250" r="1.5" stroke="none" fill="#b5b4fa" transform="translate(30 350)"/>
+    <circle cx="240" cy="65" r="1" stroke="none" fill="#b5b4fa" transform="translate(200 410)"/>
+</g>
+</svg>

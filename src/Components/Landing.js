@@ -4,7 +4,7 @@ import SVGLink from "./SVGLink";
 export default class Landing extends React.Component {
   render() {
     return (
-      <div className="landingPage">
+      <div id="landingPage">
         <div id="landingWrapper">
           <div id="landingPhotoDiv">
             <img src="Images/landing_blush.png" alt="" id="landingPhoto" />

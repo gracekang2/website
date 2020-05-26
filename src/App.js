@@ -1,5 +1,10 @@
 import React from "react";
-import "./App.css";
+import "./Styles/App.css";
+import "./Styles/Landing.css";
+import "./Styles/AboutMe.css";
+import "./Styles/Skills.css";
+import "./Styles/Header.css";
+import "./Styles/Coding.css";
 import Landing from "./Components/Landing.js";
 import Header from "./Components/Header";
 import AboutMe from "./Components/AboutMe";
@@ -8,9 +13,9 @@ import CodingExperience from "./Components/CodingExperience";
 import { ContactMe } from "./Components/ContactMe";
 
 export default class App extends React.Component {
-  OnLinkClick = value => {
-    this.setState(prev => ({
-      Path: value
+  OnLinkClick = (value) => {
+    this.setState((prev) => ({
+      Path: value,
     }));
     window.history.replaceState({}, null, value);
   };
@@ -20,7 +25,7 @@ export default class App extends React.Component {
     BackgroundColour: "backgroundColour1",
     PictureURL: "Images/bitmoji_transparent_1.png",
     PageIndex: "1",
-    Path: window.location.pathname
+    Path: window.location.pathname,
   };
 
   render() {
@@ -33,7 +38,7 @@ export default class App extends React.Component {
           OnLinkClick={this.OnLinkClick}
         ></Header>
         <div className="content">
-          {(function(path, headingColour, picURL, backgroundColour) {
+          {(function (path, headingColour, picURL, backgroundColour) {
             switch (path) {
               case "/home":
                 return (
@@ -61,12 +66,12 @@ export default class App extends React.Component {
                   ></CodingExperience>
                 );
               default:
-                  return (
-                    <Landing
-                      LandingColour={headingColour}
-                      PictureURL={picURL}
-                    ></Landing>
-                  );
+                return (
+                  <Landing
+                    LandingColour={headingColour}
+                    PictureURL={picURL}
+                  ></Landing>
+                );
             }
           })(
             this.state.Path,
