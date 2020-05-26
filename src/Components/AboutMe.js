@@ -134,12 +134,27 @@ export default class AboutMe extends React.Component {
     fetch("https://currently-reads.now.sh/reading/114484403/json")
       .then((res) => res.json())
       .then((data) => {
-        this.setState({
-          currentBook: data && data.length && data[0] && data[0].book,
-        });
+        if (
+          data &&
+          data.length &&
+          data[0] &&
+          data[0].book &&
+          data[0].book.length
+        ) {
+          this.setState({
+            currentBook: data[0].book[0],
+            currentAuthor:
+              data[0].book[0].authors.length &&
+              data[0].book[0].authors[0].author.length &&
+              data[0].book[0].authors[0].author[0].name[0],
+          });
+        }
+        console.log(data[0].book[0]);
       })
       .catch(console.log);
   }
+
+  state = {};
 
   render() {
     return (
@@ -160,15 +175,38 @@ export default class AboutMe extends React.Component {
         <br />
         <br />
         <span className={this.props.BackgroundColour + " aboutMeCategory"}>
-          Nationality:
-        </span>
-        <span className="aboutMeAns">Canadian / South Korean 🍙</span>
-        <br />
-        <br />
-        <span className={this.props.BackgroundColour + " aboutMeCategory"}>
           Hometown:
         </span>
         <span className="aboutMeAns">Toronto, Canada 🍁</span>
+        {this.state.currentBook ? (
+          <>
+            <br />
+            <br />
+            <span className={this.props.BackgroundColour + " aboutMeCategory"}>
+              I'm Currently Reading:
+            </span>
+            <span className="aboutMeAns">
+              {this.state.currentBook.title_without_series} -{" "}
+              {this.state.currentAuthor}
+              <a
+                href="https://www.goodreads.com/user/show/114484403-grace"
+                target="_blank"
+              >
+                <svg
+                  style={{ width: "24px", height: "24px", marginLeft: "6px", marginBottom: "-5px" }}
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"
+                  />
+                </svg>
+              </a>
+            </span>
+          </>
+        ) : (
+          <></>
+        )}
         <p id="aboutMeDesc">
           Nice to meet you! As you can probably tell, my name is
           <b>
