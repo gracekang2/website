@@ -2,8 +2,8 @@ import React from "react";
 import Typing from "react-typing-animation";
 
 export default class SkillSummary extends React.Component {
-  sleep = ms => {
-    return new Promise(resolve => setTimeout(resolve, ms));
+  sleep = (ms) => {
+    return new Promise((resolve) => setTimeout(resolve, ms));
   };
 
   languages = (
@@ -79,7 +79,7 @@ export default class SkillSummary extends React.Component {
   );
 
   printLanguages = () => {
-    this.setState(prev => ({
+    this.setState((prev) => ({
       Command: null,
       Output: prev.Output ? (
         <span>
@@ -89,10 +89,10 @@ export default class SkillSummary extends React.Component {
         </span>
       ) : (
         <span>{prev.CommandText}</span>
-      )
+      ),
     }));
     this.sleep(1000).then(() => {
-      this.setState(prev => ({
+      this.setState((prev) => ({
         Output: (
           <span>
             {prev.Output}
@@ -100,30 +100,30 @@ export default class SkillSummary extends React.Component {
             {this.python}
           </span>
         ),
-        Typing: false
+        Typing: false,
       }));
       this.sleep(1000).then(() => {
-        this.setState(prev => ({
+        this.setState((prev) => ({
           Output: (
             <span>
               {prev.Output}
               <br />
               {this.javascript}
             </span>
-          )
+          ),
         }));
         this.sleep(1000).then(() => {
-          this.setState(prev => ({
+          this.setState((prev) => ({
             Output: (
               <span>
                 {prev.Output}
                 <br />
                 {this.cLanguages}
               </span>
-            )
+            ),
           }));
           this.sleep(1000).then(() => {
-            this.setState(prev => ({
+            this.setState((prev) => ({
               Output: (
                 <span>
                   {prev.Output}
@@ -133,7 +133,7 @@ export default class SkillSummary extends React.Component {
                   ---------------------------
                 </span>
               ),
-              Printing: false
+              Printing: false,
             }));
           });
         });
@@ -142,7 +142,7 @@ export default class SkillSummary extends React.Component {
   };
 
   printSkillSummary = () => {
-    this.setState(prev => ({
+    this.setState((prev) => ({
       Command: null,
       Output: prev.Output ? (
         <span>
@@ -152,10 +152,10 @@ export default class SkillSummary extends React.Component {
         </span>
       ) : (
         <span>{prev.CommandText}</span>
-      )
+      ),
     }));
     this.sleep(1000).then(() => {
-      this.setState(prev => ({
+      this.setState((prev) => ({
         Output: prev.Output ? (
           <span>
             {prev.Output}
@@ -165,20 +165,20 @@ export default class SkillSummary extends React.Component {
         ) : (
           <span>{this.languages}</span>
         ),
-        Typing: false
+        Typing: false,
       }));
       this.sleep(1000).then(() => {
-        this.setState(prev => ({
+        this.setState((prev) => ({
           Output: (
             <span>
               {prev.Output}
               <br />
               {this.libraries}
             </span>
-          )
+          ),
         }));
         this.sleep(1000).then(() => {
-          this.setState(prev => ({
+          this.setState((prev) => ({
             Output: (
               <span>
                 {prev.Output}
@@ -187,7 +187,7 @@ export default class SkillSummary extends React.Component {
                 ----------------------------
               </span>
             ),
-            Printing: false
+            Printing: false,
           }));
         });
       });
@@ -204,17 +204,17 @@ export default class SkillSummary extends React.Component {
       </Typing>
     ),
     Output: null,
-    CommandText: "python skill_summary.py"
+    CommandText: "python skill_summary.py",
   };
 
   startTyping = () => {
-    this.setState(prev => ({
-      Typing: true
+    this.setState((prev) => ({
+      Typing: true,
     }));
   };
 
   onClickSkillSummary = () => {
-    this.setState(prev => ({
+    this.setState((prev) => ({
       Command: (
         <Typing
           className="command"
@@ -226,12 +226,12 @@ export default class SkillSummary extends React.Component {
         </Typing>
       ),
       CommandText: "python skill_summary.py",
-      Printing: true
+      Printing: true,
     }));
   };
 
   onClickLanguages = () => {
-    this.setState(prev => ({
+    this.setState((prev) => ({
       Command: (
         <Typing
           className="command"
@@ -243,7 +243,7 @@ export default class SkillSummary extends React.Component {
         </Typing>
       ),
       CommandText: "python languages.py",
-      Printing: true
+      Printing: true,
     }));
   };
 
@@ -252,10 +252,22 @@ export default class SkillSummary extends React.Component {
       <div id="skillSummary">
         <h1 className={this.props.LandingColour}>skills summary</h1>
         <p>
-          Hey! To see some summarized information about my skillset, you can
-          click one of the commands in the "terminal" below! For more detailed
-          info, check out my coding experience section.
+          To see some summarized information about my skillset, you can
+          <b className={this.props.LandingColour}>
+            {" "}
+            click one of the commands
+          </b>{" "}
+          in the "terminal" below!
+          <br />
+          For more detailed info, check out my coding experience section.
         </p>
+        <h4>
+          <span className={this.props.LandingColour}>
+            Don't have a lot of time?
+          </span>{" "}
+          Click <a href="GraceKang_resume.pdf" target="_blank">here</a> to view my
+          resume.
+        </h4>
         <div id="terminal">
           <div id="terminalHeader">
             <div id="redBtn" className="terminalBtn"></div>

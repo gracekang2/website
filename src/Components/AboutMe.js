@@ -4,127 +4,77 @@ import Gallery from "react-photo-gallery";
 export default class AboutMe extends React.Component {
   photos = [
     {
-      src: "Images/about_me_vertical_21.jpg",
+      src: "AboutMeImages/15.jpg",
       width: 3,
       height: 4.5,
     },
     {
-      src: "Images/about_me_vertical_2.jpg",
+      src: "AboutMeImages/14.jpg",
       width: 3,
       height: 4,
     },
     {
-      src: "Images/about_me_vertical_6.jpg",
+      src: "AboutMeImages/12.jpg",
       width: 3,
       height: 4,
     },
     {
-      src: "Images/about_me_vertical_23.jpg",
+      src: "AboutMeImages/3.jpg",
       width: 3,
       height: 4,
     },
     {
-      src: "Images/about_me_vertical_5.jpg",
+      src: "AboutMeImages/4.jpg",
       width: 3,
       height: 4,
     },
     {
-      src: "Images/about_me_vertical_25.jpg",
+      src: "AboutMeImages/11.jpg",
       width: 3,
       height: 4,
     },
     {
-      src: "Images/about_me_vertical_27.jpg",
+      src: "AboutMeImages/5.jpg",
       width: 3,
       height: 4,
     },
     {
-      src: "Images/about_me_vertical_28.jpg",
+      src: "AboutMeImages/7.jpg",
       width: 3,
       height: 4,
     },
     {
-      src: "Images/about_me_vertical_29.jpg",
+      src: "AboutMeImages/8.jpg",
       width: 3,
       height: 4,
     },
     {
-      src: "Images/about_me_vertical_30.jpg",
+      src: "AboutMeImages/9.jpg",
       width: 3,
       height: 4,
     },
     {
-      src: "Images/about_me_vertical_17.jpg",
+      src: "AboutMeImages/6.jpg",
       width: 3,
       height: 4,
     },
     {
-      src: "Images/about_me_vertical_3.jpg",
+      src: "AboutMeImages/10.jpg",
       width: 3,
       height: 4,
     },
     {
-      src: "Images/about_me_vertical_32.jpg",
+      src: "AboutMeImages/2.jpg",
       width: 3,
       height: 4,
     },
     {
-      src: "Images/about_me_vertical_31.jpg",
+      src: "AboutMeImages/13.jpg",
       width: 3,
       height: 4,
     },
     {
-      src: "Images/about_me_vertical_8.jpg",
-      width: 3,
-      height: 4,
-    },
-    {
-      src: "Images/about_me_vertical_9.jpg",
-      width: 3,
-      height: 4,
-    },
-    {
-      src: "Images/about_me_vertical_10.jpg",
-      width: 3,
-      height: 4,
-    },
-    {
-      src: "Images/about_me_vertical_11.jpg",
-      width: 3,
-      height: 4,
-    },
-    {
-      src: "Images/about_me_vertical_12.jpg",
-      width: 3,
-      height: 4,
-    },
-    {
-      src: "Images/about_me_vertical_13.jpg",
-      width: 3,
-      height: 4,
-    },
-    {
-      src: "Images/about_me_vertical_15.jpg",
-      width: 3,
-      height: 4,
-    },
-    {
-      src: "Images/about_me_vertical_34.jpg",
-      width: 3,
-      height: 4,
-    },
-    {
-      src: "Images/about_me_vertical_16.jpg",
-      width: 3,
-      height: 4,
-    },
-    {
-      src: "Images/about_me_vertical_19.jpg",
-      width: 3,
-      height: 4,
-    },
-    {
-      src: "Images/about_me_vertical_20.jpg",
+      src: "AboutMeImages/1.jpg",
       width: 3,
       height: 4,
     },
@@ -149,7 +99,6 @@ export default class AboutMe extends React.Component {
               data[0].book[0].authors[0].author[0].name[0],
           });
         }
-        console.log(data[0].book[0]);
       })
       .catch(console.log);
   }
@@ -183,7 +132,7 @@ export default class AboutMe extends React.Component {
             <br />
             <br />
             <span className={this.props.BackgroundColour + " aboutMeCategory"}>
-              I'm Currently Reading:
+              I'm Currently Reading... 💭
             </span>
             <span className="aboutMeAns">
               {this.state.currentBook.title_without_series} -{" "}
@@ -193,7 +142,12 @@ export default class AboutMe extends React.Component {
                 target="_blank"
               >
                 <svg
-                  style={{ width: "24px", height: "24px", marginLeft: "6px", marginBottom: "-5px" }}
+                  style={{
+                    width: "24px",
+                    height: "24px",
+                    marginLeft: "6px",
+                    marginBottom: "-5px",
+                  }}
                   viewBox="0 0 24 24"
                 >
                   <path
@@ -207,46 +161,61 @@ export default class AboutMe extends React.Component {
         ) : (
           <></>
         )}
+        <br />
+        <br />
+        <hr />
         <p id="aboutMeDesc">
-          Nice to meet you! As you can probably tell, my name is
-          <b>
-            <span className={this.props.LandingColour}> Grace </span>
-          </b>
-          and I'm a second year Computer Science student at the University of
-          Waterloo. <br />
-          When I'm not coding, I love to spend time with my loved ones
-          (especially my dog), go hiking, and travel! Some of my favourite
-          places that I've visited are Quebec City and California, but South
-          Korea is definitely my top travel destination for all the delicious
-          street food. I've always loved to take pictures everywhere I go, but
-          I've recently taken up film photography. Even though it's expensive to
-          keep up with the film + development costs, it's quickly become one of
-          my favourite hobbies.
-          <b>
-            <span className={this.props.LandingColour}>
-              {" "}
-              Scroll down to see some of my film pictures, and some other
-              pictures I've taken in the last year or so!
-            </span>
-          </b>{" "}
-          You'll find lots of pictures of my friends, but also of my dog! His
-          name is Teddy - my family adopted him in 2016, and I love him with all
-          my heart.
+          Welcome to my website 😺! My name is
+          <b className={this.props.LandingColour}> Grace </b>
+          and I'm a second year{" "}
+          <b className={this.props.LandingColour}>Computer Science</b> student
+          at the{" "}
+          <b className={this.props.LandingColour}>University of Waterloo.</b>
+          <br />
           <br />
           Speaking in terms of my technical interests -- while most of my
-          experience is in full-stack software engineering, I'm currently
-          leaning more towards backend development! I would love any opportunity
-          to grow in that area of Computer Science, so feel free to reach out if
-          you're interested. For more information about my skillset or past
-          technical experiences, you can head over to my skills summary or my
-          coding experience section.
-          <br />I am currently looking for an internship opportunity for{" "}
+          experience is in full-stack software engineering, I'm mostly
+          interested in backend development! I would love any opportunity to
+          grow my skillset in that area of Computer Science. For more
+          information about my skillset or past technical experiences, you can
+          head over to my skills summary or my coding experience section.
+          <br />
           <b>
-            <span className={this.props.LandingColour}> Fall 2020</span>
+            I am currently looking for an internship opportunity for{" "}
+            <b>
+              <span className={this.props.LandingColour}> Winter 2021</span>
+            </b>
+            , so I would love to chat!
           </b>
-          , so I would love to chat!
+          <br />
+          <br />
+          Let me also tell you a little more about me. I think that one of the
+          easiest ways to get to know someone is through their favourites, so
+          here are a few of mine...
+          <br />
+          <ol>
+            <li>
+              <b className={this.props.LandingColour}>book - </b> Kafka on the
+              Shore by Haruki Murakami
+            </li>
+            <li>
+              <b className={this.props.LandingColour}>movie - </b> A Beautiful
+              Mind
+            </li>
+            <li>
+              <b className={this.props.LandingColour}>artists - </b> Daniel
+              Caesar, Khalid and Rich Brian
+            </li>
+          </ol>
+          I also love to spend time with my loved ones (especially my dog),
+          read, and travel! Some of my favourite places that I've visited are
+          Quebec City and California, but South Korea is definitely my top
+          travel destination for all the delicious street food. If you scroll
+          down, you'll find pictures of me and my friends, but also of my dog
+          🐶! His name is Teddy and my family adopted him in 2016.
           <br />
         </p>
+        <hr />
         <h1 className={this.props.LandingColour}>some pictures!</h1>
         <Gallery photos={this.photos}></Gallery>
       </div>
