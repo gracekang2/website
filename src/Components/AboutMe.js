@@ -4,77 +4,77 @@ import Gallery from "react-photo-gallery";
 export default class AboutMe extends React.Component {
   photos = [
     {
-      src: "AboutMeImages/15.jpg",
+      src: "./AboutMeImages/15.jpg",
       width: 3,
       height: 4.5,
     },
     {
-      src: "AboutMeImages/14.jpg",
+      src: "./AboutMeImages/14.jpg",
       width: 3,
       height: 4,
     },
     {
-      src: "AboutMeImages/12.jpg",
+      src: "./AboutMeImages/12.jpg",
       width: 3,
       height: 4,
     },
     {
-      src: "AboutMeImages/3.jpg",
+      src: "./AboutMeImages/3.jpg",
       width: 3,
       height: 4,
     },
     {
-      src: "AboutMeImages/4.jpg",
+      src: "./AboutMeImages/4.jpg",
       width: 3,
       height: 4,
     },
     {
-      src: "AboutMeImages/11.jpg",
+      src: "./AboutMeImages/11.jpg",
       width: 3,
       height: 4,
     },
     {
-      src: "AboutMeImages/5.jpg",
+      src: "./AboutMeImages/5.jpg",
       width: 3,
       height: 4,
     },
     {
-      src: "AboutMeImages/7.jpg",
+      src: "./AboutMeImages/7.jpg",
       width: 3,
       height: 4,
     },
     {
-      src: "AboutMeImages/8.jpg",
+      src: "./AboutMeImages/8.jpg",
       width: 3,
       height: 4,
     },
     {
-      src: "AboutMeImages/9.jpg",
+      src: "./AboutMeImages/9.jpg",
       width: 3,
       height: 4,
     },
     {
-      src: "AboutMeImages/6.jpg",
+      src: "./AboutMeImages/6.jpg",
       width: 3,
       height: 4,
     },
     {
-      src: "AboutMeImages/10.jpg",
+      src: "./AboutMeImages/10.jpg",
       width: 3,
       height: 4,
     },
     {
-      src: "AboutMeImages/2.jpg",
+      src: "./AboutMeImages/2.jpg",
       width: 3,
       height: 4,
     },
     {
-      src: "AboutMeImages/13.jpg",
+      src: "./AboutMeImages/13.jpg",
       width: 3,
       height: 4,
     },
     {
-      src: "AboutMeImages/1.jpg",
+      src: "./AboutMeImages/1.jpg",
       width: 3,
       height: 4,
     },
