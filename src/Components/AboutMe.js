@@ -140,6 +140,7 @@ export default class AboutMe extends React.Component {
               <a
                 href="https://www.goodreads.com/user/show/114484403-grace"
                 target="_blank"
+                style={{color: "#551A8B"}}
               >
                 <svg
                   style={{

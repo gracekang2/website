@@ -261,7 +261,7 @@ export default class SkillSummary extends React.Component {
             Don't have a lot of time?
           </span>{" "}
           Click{" "}
-          <a href="GraceKang_resume.pdf" style={{color: "#551A8B"}} target="_blank">
+          <a href="GraceKang_resume.pdf" style={{color: "#551A8B"}}>
             here
           </a>{" "}
           to see my resume.
