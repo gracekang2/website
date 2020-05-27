@@ -15,9 +15,8 @@ export default class CodingExperience extends React.Component {
           BackgroundColor={this.props.BackgroundColor}
         />
         <h2 className={this.props.LandingColour}>web projects</h2>
-        Use the left and right arrows to read about some of the web projects I've created!
-        <br/>
-        These sites are some of the tools that I created while working at Scotiabank as a co-op student.
+        Use the <b>left and right arrows</b> to read about some of the web tools that I
+        created while working as a full stack developer at Scotiabank!
         <br />
         <br />
         <WebSites />

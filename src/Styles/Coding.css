@@ -85,6 +85,9 @@
   background-color: white !important;
   color: black;
 }
+#__ReactUnityWebGL_1__ div button {
+  display: none;
+}
 
 /* EcoStore */
 #ecostoreimg img {

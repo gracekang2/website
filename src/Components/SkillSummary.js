@@ -46,7 +46,7 @@ export default class SkillSummary extends React.Component {
 
   javascript = (
     <span>
-      <span className="yellowTxt">javascript: </span>
+      <span className="yellowTxt">JavaScript: </span>
       <span>
         experience using JavaScript for both frontend and backend tasks - used{" "}
         <span className="greenTxt">jQuery</span> during co-op as a full-stack
@@ -256,16 +256,6 @@ export default class SkillSummary extends React.Component {
     return (
       <div id="skillSummary">
         <h1 className={this.props.LandingColour}>skills summary</h1>
-        <p>
-          To see some summarized information about my skillset, you can
-          <b className={this.props.LandingColour}>
-            {" "}
-            click one of the commands
-          </b>{" "}
-          in the "terminal" below!
-          <br />
-          For more detailed info, check out my coding experience section.
-        </p>
         <h4>
           <span className={this.props.LandingColour}>
             Don't have a lot of time?
@@ -276,6 +266,16 @@ export default class SkillSummary extends React.Component {
           </a>{" "}
           to see my resume.
         </h4>
+        <p>
+          To see some summarized information about my skillset, you can
+          <b className={this.props.LandingColour}>
+            {" "}
+            click one of the commands
+          </b>{" "}
+          in the "terminal" below!
+          <br />
+          For more detailed info, check out my coding experience section.
+        </p>
         <div id="terminal">
           <div id="terminalHeader">
             <div id="redBtn" className="terminalBtn"></div>

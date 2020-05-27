@@ -83,12 +83,13 @@
 
   #menuClose {
     float: right;
+    margin-right: 40px;
   }
 
   .linkWrapper .headerLink {
     display: block;
-    width: 50vw;
-    padding: 5px;
+    width: 100vw;
+    padding: 10px;
     left: 0;
     margin-bottom: 20px;
   }

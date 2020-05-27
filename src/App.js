@@ -10,7 +10,6 @@ import Header from "./Components/Header";
 import AboutMe from "./Components/AboutMe";
 import SkillSummary from "./Components/SkillSummary";
 import CodingExperience from "./Components/CodingExperience";
-import { ContactMe } from "./Components/ContactMe";
 
 export default class App extends React.Component {
   OnLinkClick = (value) => {
@@ -80,7 +79,6 @@ export default class App extends React.Component {
             this.state.BackgroundColour
           )}
         </div>
-        {/* <ContactMe Picture={this.state.PictureURL} /> */}
       </div>
     );
   }

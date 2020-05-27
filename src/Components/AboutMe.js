@@ -132,10 +132,10 @@ export default class AboutMe extends React.Component {
             <br />
             <br />
             <span className={this.props.BackgroundColour + " aboutMeCategory"}>
-              I'm Currently Reading... 💭
+              Currently Reading... 💭
             </span>
             <span className="aboutMeAns">
-              {this.state.currentBook.title_without_series} -{" "}
+              {this.state.currentBook.title_without_series},{" "}
               {this.state.currentAuthor}
               <a
                 href="https://www.goodreads.com/user/show/114484403-grace"
@@ -164,35 +164,37 @@ export default class AboutMe extends React.Component {
         <br />
         <br />
         <hr />
-        <p id="aboutMeDesc">
-          Welcome to my website 😺! My name is
-          <b className={this.props.LandingColour}> Grace </b>
-          and I'm a second year{" "}
-          <b className={this.props.LandingColour}>Computer Science</b> student
-          at the{" "}
-          <b className={this.props.LandingColour}>University of Waterloo.</b>
-          <br />
-          <br />
-          Speaking in terms of my technical interests -- while most of my
-          experience is in full-stack software engineering, I'm mostly
-          interested in backend development! I would love any opportunity to
-          grow my skillset in that area of Computer Science. For more
-          information about my skillset or past technical experiences, you can
-          head over to my skills summary or my coding experience section.
-          <br />
-          <b>
-            I am currently looking for an internship opportunity for{" "}
+        <div id="aboutMeDesc">
+          <p>
+            Welcome to my website 😺! My name is
+            <b className={this.props.LandingColour}> Grace </b>
+            and I'm a second year{" "}
+            <b className={this.props.LandingColour}>Computer Science</b> student
+            at the{" "}
+            <b className={this.props.LandingColour}>University of Waterloo.</b>
+            <br />
+            <br />
+            Speaking in terms of my technical interests -- while most of my
+            experience is in full-stack software engineering, I'm mostly
+            interested in backend development! I would love any opportunity to
+            grow my skillset in that area of Computer Science. For more
+            information about my skillset or past technical experiences, you can
+            head over to my skills summary or my coding experience section.
+            <br />
             <b>
-              <span className={this.props.LandingColour}> Winter 2021</span>
+              I am currently looking for an internship opportunity for{" "}
+              <b>
+                <span className={this.props.LandingColour}> Winter 2021</span>
+              </b>
+              , so I would love to chat!
             </b>
-            , so I would love to chat!
-          </b>
-          <br />
-          <br />
-          Let me also tell you a little more about me. I think that one of the
-          easiest ways to get to know someone is through their favourites, so
-          here are a few of mine...
-          <br />
+            <br />
+            <br />
+            Let me also tell you a little more about me. I think that one of the
+            easiest ways to get to know someone is through their favourites, so
+            here are a few of mine...
+            <br />
+          </p>
           <ol>
             <li>
               <b className={this.props.LandingColour}>book - </b> Kafka on the
@@ -207,14 +209,16 @@ export default class AboutMe extends React.Component {
               Caesar, Khalid and Rich Brian
             </li>
           </ol>
-          I also love to spend time with my loved ones (especially my dog),
-          read, and travel! Some of my favourite places that I've visited are
-          Quebec City and California, but South Korea is definitely my top
-          travel destination for all the delicious street food. If you scroll
-          down, you'll find pictures of me and my friends, but also of my dog
-          🐶! His name is Teddy and my family adopted him in 2016.
-          <br />
-        </p>
+          <p>
+            I also love to spend time with my loved ones (especially my dog),
+            read, and travel! Some of my favourite places that I've visited are
+            Quebec City and California, but South Korea is definitely my top
+            travel destination for all the delicious street food. If you scroll
+            down, you'll find pictures of me and my friends, but also of my dog
+            🐶! His name is Teddy and my family adopted him in 2016.
+            <br />
+          </p>
+        </div>
         <hr />
         <h1 className={this.props.LandingColour}>some pictures!</h1>
         <Gallery photos={this.photos}></Gallery>

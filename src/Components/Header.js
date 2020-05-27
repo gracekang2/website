@@ -1,57 +1,60 @@
 import React from "react";
 import { HeaderLink } from "./HeaderLink";
-import ColourPalette from "./ColourPalette";
 
 export default class Header extends React.Component {
   pages = [
     {
       name: "home",
-      href: "/home"
+      href: "/home",
     },
     {
       name: "about me",
-      href: "/about"
+      href: "/about",
     },
     {
       name: "skills",
-      href: "/skills"
+      href: "/skills",
     },
     {
       name: "coding",
-      href: "/code"
-    }
+      href: "/code",
+    },
   ];
 
   updateDimensions = () => {
-    this.setState(prev => ({
-        Collapsed: window.screen.width <= 450,
-        SmallScreen: window.screen.width <= 450,
-      }));
+    this.setState((prev) => ({
+      Collapsed: window.screen.width <= 450,
+      SmallScreen: window.screen.width <= 450,
+    }));
   };
 
   OnMenuIconClick = () => {
-    this.setState(prev => ({
-      Collapsed: false
+    this.setState((prev) => ({
+      Collapsed: false,
     }));
   };
 
   OnMenuCloseClick = () => {
-    this.setState(prev => ({
-      Collapsed: true
+    this.setState((prev) => ({
+      Collapsed: true,
     }));
   };
 
+  OnSmallLinkClick = (value) => {
+    this.OnMenuCloseClick();
+    this.props.OnLinkClick(value);
+  };
 
   componentWillMount() {
-      this.updateDimensions();
+    this.updateDimensions();
   }
 
   componentDidMount() {
-      window.addEventListener("resize", this.updateDimensions);
+    window.addEventListener("resize", this.updateDimensions);
   }
 
   componentWillUnmount() {
-      window.removeEventListener("resize", this.updateDimensions);
+    window.removeEventListener("resize", this.updateDimensions);
   }
 
   render() {
@@ -62,7 +65,7 @@ export default class Header extends React.Component {
           style={{
             width: "24px",
             height: "24px",
-            display: this.state.Collapsed ? "inline-block" : "none"
+            display: this.state.Collapsed ? "inline-block" : "none",
           }}
           viewBox="0 0 24 24"
           onClick={this.OnMenuIconClick}
@@ -80,7 +83,10 @@ export default class Header extends React.Component {
             style={{
               width: "24px",
               height: "24px",
-              display: this.state.SmallScreen && !this.state.Collapsed ? "inline-block" : "none"
+              display:
+                this.state.SmallScreen && !this.state.Collapsed
+                  ? "inline-block"
+                  : "none",
             }}
             viewBox="0 0 24 24"
             id="menuClose"
@@ -92,13 +98,18 @@ export default class Header extends React.Component {
             />
           </svg>
           <br />
-          {this.pages.map(page => {
+          {this.pages.map((page) => {
             return (
               <HeaderLink
+                key={[page.href]}
                 Href={page.href}
                 Colour={this.props.Colour}
                 Name={page.name}
-                OnLinkClick={this.props.OnLinkClick}
+                OnLinkClick={
+                  this.state.SmallScreen
+                    ? this.OnSmallLinkClick
+                    : this.props.OnLinkClick
+                }
               />
             );
           })}
