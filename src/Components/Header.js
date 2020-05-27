@@ -5,7 +5,7 @@ export default class Header extends React.Component {
   pages = [
     {
       name: "home",
-      href: "/home",
+      href: "/",
     },
     {
       name: "about me",

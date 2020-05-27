@@ -10,21 +10,14 @@ import Header from "./Components/Header";
 import AboutMe from "./Components/AboutMe";
 import SkillSummary from "./Components/SkillSummary";
 import CodingExperience from "./Components/CodingExperience";
+import { HashRouter, Route } from "react-router-dom";
 
 export default class App extends React.Component {
-  OnLinkClick = (value) => {
-    this.setState((prev) => ({
-      Path: value,
-    }));
-    window.history.replaceState({}, null, value);
-  };
-
   state = {
     HeadingColour: "headingColour1",
     BackgroundColour: "backgroundColour1",
     PictureURL: "Images/bitmoji_transparent_1.png",
-    PageIndex: "1",
-    Path: window.location.pathname,
+    PageIndex: "1"
   };
 
   render() {
@@ -37,47 +30,39 @@ export default class App extends React.Component {
           OnLinkClick={this.OnLinkClick}
         ></Header>
         <div className="content">
-          {(function (path, headingColour, picURL, backgroundColour) {
-            switch (path) {
-              case "/home":
-                return (
-                  <Landing
-                    LandingColour={headingColour}
-                    PictureURL={picURL}
-                  ></Landing>
-                );
-              case "/about":
-                return (
-                  <AboutMe
-                    LandingColour={headingColour}
-                    BackgroundColour={backgroundColour}
-                  ></AboutMe>
-                );
-              case "/skills":
-                return (
-                  <SkillSummary LandingColour={headingColour}></SkillSummary>
-                );
-              case "/code":
-                return (
-                  <CodingExperience
-                    LandingColour={headingColour}
-                    BackgroundColor={backgroundColour}
-                  ></CodingExperience>
-                );
-              default:
-                return (
-                  <Landing
-                    LandingColour={headingColour}
-                    PictureURL={picURL}
-                  ></Landing>
-                );
-            }
-          })(
-            this.state.Path,
-            this.state.HeadingColour,
-            this.state.PictureURL,
-            this.state.BackgroundColour
-          )}
+          <HashRouter basename="/">
+            <Route exact path="/" component={Landing} />
+            <Route
+              path="/about"
+              render={(props) => (
+                <AboutMe
+                  {...props}
+                  LandingColour={this.state.HeadingColour}
+                  BackgroundColour={this.state.BackgroundColour}
+                />
+              )}
+            />
+            <Route
+              path="/skills"
+              render={(props) => (
+                <SkillSummary
+                  {...props}
+                  LandingColour={this.state.HeadingColour}
+                  BackgroundColour={this.state.BackgroundColour}
+                />
+              )}
+            />
+            <Route
+              path="/code"
+              render={(props) => (
+                <CodingExperience
+                  {...props}
+                  LandingColour={this.state.HeadingColour}
+                  BackgroundColour={this.state.BackgroundColour}
+                />
+              )}
+            />
+          </HashRouter>
         </div>
       </div>
     );
