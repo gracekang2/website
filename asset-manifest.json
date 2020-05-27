@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.1b39f206.chunk.css",
-    "main.js": "/website/static/js/main.8c4958a8.chunk.js",
-    "main.js.map": "/website/static/js/main.8c4958a8.chunk.js.map",
-    "runtime-main.js": "/website/static/js/runtime-main.821b49fd.js",
-    "runtime-main.js.map": "/website/static/js/runtime-main.821b49fd.js.map",
-    "static/js/2.66b8d3a4.chunk.js": "/website/static/js/2.66b8d3a4.chunk.js",
-    "static/js/2.66b8d3a4.chunk.js.map": "/website/static/js/2.66b8d3a4.chunk.js.map",
-    "index.html": "/website/index.html",
-    "precache-manifest.040fa754e6b2064c2e41c407307934d0.js": "/website/precache-manifest.040fa754e6b2064c2e41c407307934d0.js",
-    "service-worker.js": "/website/service-worker.js",
-    "static/css/main.1b39f206.chunk.css.map": "/website/static/css/main.1b39f206.chunk.css.map",
-    "static/js/2.66b8d3a4.chunk.js.LICENSE.txt": "/website/static/js/2.66b8d3a4.chunk.js.LICENSE.txt",
-    "static/media/Landing.css": "/website/static/media/mobile_blob.df04e6ca.svg",
-    "static/media/Coding.css": "/website/static/media/toronto.d462a571.jpg"
+    "main.css": "/static/css/main.e0ec1cb3.chunk.css",
+    "main.js": "/static/js/main.00830b7d.chunk.js",
+    "main.js.map": "/static/js/main.00830b7d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.963817d1.js",
+    "runtime-main.js.map": "/static/js/runtime-main.963817d1.js.map",
+    "static/js/2.66b8d3a4.chunk.js": "/static/js/2.66b8d3a4.chunk.js",
+    "static/js/2.66b8d3a4.chunk.js.map": "/static/js/2.66b8d3a4.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.ad8ecfb2d645d5bbfc18093488174033.js": "/precache-manifest.ad8ecfb2d645d5bbfc18093488174033.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.e0ec1cb3.chunk.css.map": "/static/css/main.e0ec1cb3.chunk.css.map",
+    "static/js/2.66b8d3a4.chunk.js.LICENSE.txt": "/static/js/2.66b8d3a4.chunk.js.LICENSE.txt",
+    "static/media/Landing.css": "/static/media/mobile_blob.df04e6ca.svg",
+    "static/media/Coding.css": "/static/media/toronto.d462a571.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.821b49fd.js",
+    "static/js/runtime-main.963817d1.js",
     "static/js/2.66b8d3a4.chunk.js",
-    "static/css/main.1b39f206.chunk.css",
-    "static/js/main.8c4958a8.chunk.js"
+    "static/css/main.e0ec1cb3.chunk.css",
+    "static/js/main.00830b7d.chunk.js"
   ]
 }
