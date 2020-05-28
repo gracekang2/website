@@ -36,6 +36,7 @@
   text-align: left;
   font-family: "VT323", monospace;
   margin-top: 40px;
+  text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
 }
 
 #landingTextDiv span {
@@ -88,6 +89,7 @@
     padding-top: 10px;
     color: black;
     margin-top: 0;
+    text-shadow: none;
   }
 }
 

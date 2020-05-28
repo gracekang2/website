@@ -194,6 +194,7 @@ export default class SkillSummary extends React.Component {
             ),
             Printing: false,
           }));
+          this.onClickLanguages();
         });
       });
     });
@@ -301,19 +302,6 @@ export default class SkillSummary extends React.Component {
                 <span className="neonPink">~desktop$ </span>
                 {this.state.Command}
               </span>
-              {!this.state.Printing ? (
-                <span className="terminalWhite">
-                  <button className="cmdBtn" onClick={this.onClickSkillSummary}>
-                    skills summary
-                  </button>
-                  <button className="cmdBtn" onClick={this.onClickLanguages}>
-                    languages
-                  </button>
-                  &lt;&lt; click a command!
-                </span>
-              ) : (
-                <span></span>
-              )}
               {!this.state.Typing ? (
                 <span id="cursor">&nbsp;&nbsp;</span>
               ) : (
