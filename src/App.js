@@ -11,14 +11,27 @@ import AboutMe from "./Components/AboutMe";
 import SkillSummary from "./Components/SkillSummary";
 import CodingExperience from "./Components/CodingExperience";
 import { HashRouter, Route } from "react-router-dom";
+import { createBrowserHistory } from "history";
+import ReactGA from "react-ga";
 
 export default class App extends React.Component {
   state = {
     HeadingColour: "headingColour1",
     BackgroundColour: "backgroundColour1",
     PictureURL: "Images/bitmoji_transparent_1.png",
-    PageIndex: "1"
+    PageIndex: "1",
   };
+
+  history = createBrowserHistory();
+
+  componentDidMount() {
+    ReactGA.initialize("UA-148594222-1");
+    ReactGA.set({});
+    this.history.listen((location) => {
+      ReactGA.set({ page: location.pathname });
+      ReactGA.pageview(location.pathname);
+    });
+  }
 
   render() {
     return (
@@ -30,7 +43,7 @@ export default class App extends React.Component {
           OnLinkClick={this.OnLinkClick}
         ></Header>
         <div className="content">
-          <HashRouter basename="/">
+          <HashRouter basename="/" history={this.history}>
             <Route exact path="/" component={Landing} />
             <Route
               path="/about"
