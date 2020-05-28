@@ -4,7 +4,7 @@ import { HashRouter, Link } from "react-router-dom";
 export const HeaderLink = ({ Href, Colour, Name, OnLinkClick }) => {
   return (
     <HashRouter basename="/">
-      <div className="headerLink">
+      <div className="headerLink" onClick={OnLinkClick}>
         <Link to={Href}>
           <span className={Colour} value={Href}>
             {Name}
