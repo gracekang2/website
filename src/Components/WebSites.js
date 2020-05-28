@@ -31,9 +31,6 @@ const WebProjects = [
         <h3>Fund Import Site</h3>
         <h5>ASP.NET Web Form, C#, jQuery, SQL, HTML, CSS</h5>
         <p>
-          Like many of the other web projects I have listed here, I made this
-          page from scratch while I was working at Scotiabank as a Technology
-          Analyst Co-op student. <br />
           Essentially, this site was a tool that would automate tedious manual
           fund tracking. It ingests multiple spreadsheets with enormous amounts
           of fund data <b>(~120 000+ rows)</b>, processes them, and makes the
