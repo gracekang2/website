@@ -272,13 +272,6 @@ export default class SkillSummary extends React.Component {
           to see my resume.
         </h4>
         <p>
-          To see some summarized information about my skillset, you can
-          <b className={this.props.LandingColour}>
-            {" "}
-            click one of the commands
-          </b>{" "}
-          in the "terminal" below!
-          <br />
           For more detailed info, check out my coding experience section.
         </p>
         <div id="terminal">

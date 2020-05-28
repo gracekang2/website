@@ -80,7 +80,7 @@ export default class AboutMe extends React.Component {
     },
   ];
 
-  componentDidMount() {
+  componentWillMount() {
     fetch("https://currently-reads.now.sh/reading/114484403/json")
       .then((res) => res.json())
       .then((data) => {
@@ -92,11 +92,16 @@ export default class AboutMe extends React.Component {
           data[0].book.length
         ) {
           this.setState({
+            loaded: true,
             currentBook: data[0].book[0],
             currentAuthor:
               data[0].book[0].authors.length &&
               data[0].book[0].authors[0].author.length &&
               data[0].book[0].authors[0].author[0].name[0],
+          });
+        } else {
+          this.setState({
+            loaded: true,
           });
         }
       })
@@ -106,7 +111,7 @@ export default class AboutMe extends React.Component {
   state = {};
 
   render() {
-    return (
+    return this.state.loaded ? (
       <div id="aboutMe">
         <h1 className={this.props.LandingColour}>about me</h1>
         <span className={this.props.BackgroundColour + " aboutMeCategory"}>
@@ -140,7 +145,7 @@ export default class AboutMe extends React.Component {
               <a
                 href="https://www.goodreads.com/user/show/114484403-grace"
                 target="_blank"
-                style={{color: "#551A8B"}}
+                style={{ color: "#551A8B" }}
               >
                 <svg
                   style={{
@@ -191,9 +196,8 @@ export default class AboutMe extends React.Component {
             </b>
             <br />
             <br />
-            Let me also tell you a little more about me. I think that one of the
-            easiest ways to get to know someone is through their favourites, so
-            here are a few of mine...
+            Let me also tell you a little more about me! Here are a few of my
+            favourites...
             <br />
           </p>
           <ol>
@@ -224,6 +228,8 @@ export default class AboutMe extends React.Component {
         <h1 className={this.props.LandingColour}>some pictures!</h1>
         <Gallery photos={this.photos}></Gallery>
       </div>
+    ) : (
+      <></>
     );
   }
 }
