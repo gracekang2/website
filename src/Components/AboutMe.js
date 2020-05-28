@@ -140,7 +140,7 @@ export default class AboutMe extends React.Component {
               <a
                 href="https://www.goodreads.com/user/show/114484403-grace"
                 target="_blank"
-                style={{color: "#551A8B"}}
+                style={{ color: "#551A8B" }}
               >
                 <svg
                   style={{
@@ -160,7 +160,37 @@ export default class AboutMe extends React.Component {
             </span>
           </>
         ) : (
-          <></>
+          <>
+            <br/>
+            <br/>
+            <span className={this.props.BackgroundColour + " aboutMeCategory"}>
+              Currently Reading... 💭
+            </span>
+            <span className="aboutMeAns">
+              {" "}
+              {" "}
+              <a
+                href="https://www.goodreads.com/user/show/114484403-grace"
+                target="_blank"
+                style={{ color: "#551A8B" }}
+              >
+                <svg
+                  style={{
+                    width: "24px",
+                    height: "24px",
+                    marginLeft: "6px",
+                    marginBottom: "-5px",
+                  }}
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"
+                  />
+                </svg>
+              </a>
+            </span>
+          </>
         )}
         <br />
         <br />
@@ -191,7 +221,8 @@ export default class AboutMe extends React.Component {
             </b>
             <br />
             <br />
-            Let me also tell you a little more about me! Here are a few of my favourites...
+            Let me also tell you a little more about me! Here are a few of my
+            favourites...
             <br />
           </p>
           <ol>
