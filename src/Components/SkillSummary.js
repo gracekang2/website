@@ -46,7 +46,7 @@ export default class SkillSummary extends React.Component {
 
   javascript = (
     <span>
-      <span className="yellowTxt">JavaScript: </span>
+      <span className="yellowTxt">JavaScript : </span>
       <span>
         experience using JavaScript for both frontend and backend tasks - used{" "}
         <span className="greenTxt">jQuery</span> during co-op as a full-stack
@@ -263,8 +263,9 @@ export default class SkillSummary extends React.Component {
           </span>{" "}
           Click{" "}
           <a
-            href="https://drive.google.com/file/d/18CtcQ9Z35Ya7hSWmn1f7T67En6pBSXjy/view"
+            href="https://drive.google.com/file/d/1zKcTM5nLaAz3D3-SnyRnoPI__lCORjF3/view?usp=sharing"
             target="_blank"
+            rel="noopener noreferrer"
             style={{ color: "#551A8B" }}
           >
             here

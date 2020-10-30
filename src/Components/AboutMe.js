@@ -4,6 +4,41 @@ import Gallery from "react-photo-gallery";
 export default class AboutMe extends React.Component {
   photos = [
     {
+      src: "./AboutMeImages/IMG_1280-min.jpg",
+      width: 3,
+      height: 4,
+    },
+    {
+      src: "./AboutMeImages/IMG_1496-min.jpg",
+      width: 3,
+      height: 4,
+    },
+    {
+      src: "./AboutMeImages/IMG_2287-min.jpg",
+      width: 3,
+      height: 4,
+    },
+    {
+      src: "./AboutMeImages/IMG_6362-min.jpg",
+      width: 3,
+      height: 4,
+    },
+    {
+      src: "./AboutMeImages/IMG_6503-min.jpg",
+      width: 3,
+      height: 4,
+    },
+    {
+      src: "./AboutMeImages/IMG_6684-min.jpg",
+      width: 3,
+      height: 4,
+    },
+    {
+      src: "./AboutMeImages/IMG_6880-min.jpg",
+      width: 3,
+      height: 4,
+    },
+    {
       src: "./AboutMeImages/15.jpg",
       width: 3,
       height: 4.5,
@@ -80,29 +115,6 @@ export default class AboutMe extends React.Component {
     },
   ];
 
-  componentWillMount() {
-    fetch("https://currently-reads.now.sh/reading/114484403/json")
-      .then((res) => res.json())
-      .then((data) => {
-        if (
-          data &&
-          data.length &&
-          data[0] &&
-          data[0].book &&
-          data[0].book.length
-        ) {
-          this.setState({
-            currentBook: data[0].book[0],
-            currentAuthor:
-              data[0].book[0].authors.length &&
-              data[0].book[0].authors[0].author.length &&
-              data[0].book[0].authors[0].author[0].name[0],
-          });
-        }
-      })
-      .catch(console.log);
-  }
-
   state = {};
 
   render() {
@@ -112,27 +124,27 @@ export default class AboutMe extends React.Component {
         <span className={this.props.BackgroundColour + " aboutMeCategory"}>
           Name:
         </span>
-        <span className="aboutMeAns">Grace Kang 🤠</span>
+        <span className="aboutMeAns">Grace Kang <span role="img" aria-label="emoji">🤠</span></span>
         <br />
         <br />
         <span className={this.props.BackgroundColour + " aboutMeCategory"}>
           Program:
         </span>
         <span className="aboutMeAns">
-          2B Computer Science, University of Waterloo 🦆
+          3A Computer Science, University of Waterloo <span role="img" aria-label="emoji">🦆</span>
         </span>
         <br />
         <br />
         <span className={this.props.BackgroundColour + " aboutMeCategory"}>
           Hometown:
         </span>
-        <span className="aboutMeAns">Toronto, Canada 🍁</span>
+        <span className="aboutMeAns">Toronto, Canada <span role="img" aria-label="emoji">🍁</span></span>
         {this.state.currentBook ? (
           <>
             <br />
             <br />
             <span className={this.props.BackgroundColour + " aboutMeCategory"}>
-              Currently Reading... 💭
+              Currently Reading... <span role="img" aria-label="emoji">💭</span>
             </span>
             <span className="aboutMeAns">
               {this.state.currentBook.title_without_series},{" "}
@@ -140,6 +152,7 @@ export default class AboutMe extends React.Component {
               <a
                 href="https://www.goodreads.com/user/show/114484403-grace"
                 target="_blank"
+                rel="noopener noreferrer"
                 style={{ color: "#551A8B" }}
               >
                 <svg
@@ -164,7 +177,7 @@ export default class AboutMe extends React.Component {
             <br/>
             <br/>
             <span className={this.props.BackgroundColour + " aboutMeCategory"}>
-              Currently Reading... 💭
+              Currently Reading... <span role="img" aria-label="emoji">💭</span>
             </span>
             <span className="aboutMeAns">
               {" "}
@@ -172,6 +185,7 @@ export default class AboutMe extends React.Component {
               <a
                 href="https://www.goodreads.com/user/show/114484403-grace"
                 target="_blank"
+                rel="noopener noreferrer"
                 style={{ color: "#551A8B" }}
               >
                 <svg
@@ -197,9 +211,9 @@ export default class AboutMe extends React.Component {
         <hr />
         <div id="aboutMeDesc">
           <p>
-            Welcome to my website 😺! My name is
+            Welcome to my website <span role="img" aria-label="emoji">😺</span>! My name is
             <b className={this.props.LandingColour}> Grace </b>
-            and I'm a second year{" "}
+            and I'm a third year{" "}
             <b className={this.props.LandingColour}>Computer Science</b> student
             at the{" "}
             <b className={this.props.LandingColour}>University of Waterloo.</b>
@@ -215,7 +229,7 @@ export default class AboutMe extends React.Component {
             <b>
               I am currently looking for an internship opportunity for{" "}
               <b>
-                <span className={this.props.LandingColour}> Winter 2021</span>
+                <span className={this.props.LandingColour}> Summer 2021</span>
               </b>
               , so I would love to chat!
             </b>
@@ -227,8 +241,7 @@ export default class AboutMe extends React.Component {
           </p>
           <ol>
             <li>
-              <b className={this.props.LandingColour}>book - </b> Kafka on the
-              Shore by Haruki Murakami
+              <b className={this.props.LandingColour}>book - </b> Norwegian Wood by Haruki Murakami
             </li>
             <li>
               <b className={this.props.LandingColour}>movie - </b> A Beautiful
@@ -245,7 +258,7 @@ export default class AboutMe extends React.Component {
             Quebec City and California, but South Korea is definitely my top
             travel destination for all the delicious street food. If you scroll
             down, you'll find pictures of me and my friends, but also of my dog
-            🐶! His name is Teddy and my family adopted him in 2016.
+            <span role="img" aria-label="emoji">🐶</span>! His name is Teddy and my family adopted him in 2016.
             <br />
           </p>
         </div>

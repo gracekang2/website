@@ -1,15 +1,15 @@
 import React from "react";
 
 const Images = [
-  "./Images/IMG_0248.PNG",
-  "./Images/IMG_0249.PNG",
-  "./Images/IMG_0254.PNG",
-  "./Images/IMG_0255.PNG",
-  "./Images/IMG_0256.PNG",
-  "./Images/IMG_0257.PNG",
-  "./Images/IMG_0259.PNG",
-  "./Images/IMG_0260.PNG",
-  "./Images/IMG_0258.PNG",
+  "./Images/IMG_0248-min.PNG",
+  "./Images/IMG_0249-min.PNG",
+  "./Images/IMG_0254-min.PNG",
+  "./Images/IMG_0255-min.PNG",
+  "./Images/IMG_0256-min.PNG",
+  "./Images/IMG_0257-min.PNG",
+  "./Images/IMG_0259-min.PNG",
+  "./Images/IMG_0260-min.PNG",
+  "./Images/IMG_0258-min.PNG",
 ];
 
 export default class EcoStore extends React.Component {

@@ -11,9 +11,9 @@ export default class Landing extends React.Component {
           </div>
           <div id="landingTextDiv">
             <span>
-              hello world!
+              hello world!<span role="img" aria-label="emoji">✨</span>
               <br />
-              my name is Grace :)
+              my name is Grace.
               <br />
               <br />
               let's get to know eachother!

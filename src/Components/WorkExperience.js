@@ -46,25 +46,27 @@ export default class WorkExperience extends React.Component {
                 Winter 2020 - San Francisco, California
               </i>
               <p className="workTile1">
-                I worked as a full-stack developer on the Product Payments team
-                at Wish, primarily using Python and React.js. I worked on a
-                variety of different payment and risk related tasks, some
+                I had an amazing time working as a full-stack software engineering intern on the Product Payments team
+                at Wish! I primarily coded in Python and React.js. I had the opportunity to work on a
+                variety of cool payment and risk related tasks, some
                 examples including:
               </p>
               <ul className="workTile1">
                 <li className="workTile1">
-                  Integrating with the Stripe API to implement a CVV
-                  recollection flow
+                  Integrating with Stripe's payments API to implement a CVV
+                  recollection flow, with the goal of increasing payment security.
                 </li>
                 <li className="workTile1">
-                  Building out a chargeback pipeline for PrimeiroPay
+                  Building out a brand new chargeback pipeline for PrimeiroPay, using a listener webhook, to 
+                  maintain accurate charge data.
                 </li>
                 <li className="workTile1">
                   Adding support for shipping only refunds, through Wish's
-                  chatbot, for GB, EU and CA.
+                  chatbot, for GB, EU and CA, to decrease total refunds.
                 </li>
                 <li className="workTile1">
-                  Implementing various pre-auth and post-auth risk rules
+                  Implementing a new risk decision experiment and various pre-auth rules to 
+                  increase user security and increase GMV.
                 </li>
               </ul>
             </>
@@ -90,10 +92,13 @@ export default class WorkExperience extends React.Component {
                 I worked as a full-stack web developer on the GBM Web team, and
                 created various web services for the trade floor. I used a
                 Microsoft stack - ASP.NET, C#, SQL, and jQuery, and took full
-                ownership over the development of multiple internal tools.
+                ownership over the development of multiple internal tools.<br/>
+                It was a really beneficial learning experience for me, as my first co-op, as I 
+                got the opportunity to work on the full stack and gain a solid understanding of both 
+                backend and frontend development.
                 <br />
                 <br/>
-                For more information about these projects, please see the Web
+                For more details about these projects, please see the Web
                 Projects section below!
               </p>
             </>

@@ -21,6 +21,8 @@ export default class Header extends React.Component {
     },
   ];
 
+  state = {};
+
   updateDimensions = () => {
     this.setState((prev) => ({
       Collapsed: window.screen.width <= 450,
@@ -45,11 +47,8 @@ export default class Header extends React.Component {
     this.props.OnLinkClick(value);
   };
 
-  componentWillMount() {
-    this.updateDimensions();
-  }
-
   componentDidMount() {
+    this.updateDimensions();
     window.addEventListener("resize", this.updateDimensions);
   }
 
