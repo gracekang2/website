@@ -4,17 +4,17 @@ import Gallery from "react-photo-gallery";
 export default class AboutMe extends React.Component {
   photos = [
     {
-      src: "./AboutMeImages/IMG_1280-min.jpg",
+      src: "./AboutMeImages/IMG_1280-min.JPG",
       width: 3,
       height: 4,
     },
     {
-      src: "./AboutMeImages/IMG_1496-min.jpg",
+      src: "./AboutMeImages/IMG_1496-min.JPG",
       width: 3,
       height: 4,
     },
     {
-      src: "./AboutMeImages/IMG_2287-min.jpg",
+      src: "./AboutMeImages/IMG_2287-min.JPG",
       width: 3,
       height: 4,
     },
