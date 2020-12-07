@@ -9,27 +9,7 @@ export default class AboutMe extends React.Component {
       height: 4,
     },
     {
-      src: "./AboutMeImages/IMG_1496-min.JPG",
-      width: 3,
-      height: 4,
-    },
-    {
       src: "./AboutMeImages/IMG_2287-min.JPG",
-      width: 3,
-      height: 4,
-    },
-    {
-      src: "./AboutMeImages/IMG_6362-min.jpg",
-      width: 3,
-      height: 4,
-    },
-    {
-      src: "./AboutMeImages/IMG_6503-min.jpg",
-      width: 3,
-      height: 4,
-    },
-    {
-      src: "./AboutMeImages/IMG_6684-min.jpg",
       width: 3,
       height: 4,
     },
@@ -44,22 +24,12 @@ export default class AboutMe extends React.Component {
       height: 4.5,
     },
     {
-      src: "./AboutMeImages/14.jpg",
-      width: 3,
-      height: 4,
-    },
-    {
       src: "./AboutMeImages/12.jpg",
       width: 3,
       height: 4,
     },
     {
       src: "./AboutMeImages/3.jpg",
-      width: 3,
-      height: 4,
-    },
-    {
-      src: "./AboutMeImages/4.jpg",
       width: 3,
       height: 4,
     },
@@ -79,32 +49,12 @@ export default class AboutMe extends React.Component {
       height: 4,
     },
     {
-      src: "./AboutMeImages/8.jpg",
-      width: 3,
-      height: 4,
-    },
-    {
       src: "./AboutMeImages/9.jpg",
       width: 3,
       height: 4,
     },
     {
-      src: "./AboutMeImages/6.jpg",
-      width: 3,
-      height: 4,
-    },
-    {
-      src: "./AboutMeImages/10.jpg",
-      width: 3,
-      height: 4,
-    },
-    {
       src: "./AboutMeImages/2.jpg",
-      width: 3,
-      height: 4,
-    },
-    {
-      src: "./AboutMeImages/13.jpg",
       width: 3,
       height: 4,
     },
