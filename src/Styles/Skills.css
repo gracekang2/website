@@ -29,6 +29,7 @@
   font-size: 13px;
   overflow: auto;
   height: 60vh;
+  padding-right: 8px;
 }
 
 .terminalWhite {

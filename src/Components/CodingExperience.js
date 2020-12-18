@@ -22,8 +22,8 @@ export default class CodingExperience extends React.Component {
         <WebSites />
         <h2 className={this.props.LandingColour}>eco-store</h2>
         <EcoStore />
-        <h2 className={this.props.LandingColour}>coin run</h2>
-        <Games />
+        {/* <h2 className={this.props.LandingColour}>coin run</h2>
+        <Games /> */}
       </div>
     );
   }

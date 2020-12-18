@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.feda3ce7.chunk.css",
-    "main.js": "/static/js/main.86e7cee7.chunk.js",
-    "main.js.map": "/static/js/main.86e7cee7.chunk.js.map",
+    "main.css": "/static/css/main.36836275.chunk.css",
+    "main.js": "/static/js/main.766231d1.chunk.js",
+    "main.js.map": "/static/js/main.766231d1.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.963817d1.js",
     "runtime-main.js.map": "/static/js/runtime-main.963817d1.js.map",
     "static/js/2.6749dbef.chunk.js": "/static/js/2.6749dbef.chunk.js",
     "static/js/2.6749dbef.chunk.js.map": "/static/js/2.6749dbef.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.4990bf3a46c645a3e7db6e5503596fa0.js": "/precache-manifest.4990bf3a46c645a3e7db6e5503596fa0.js",
+    "precache-manifest.d8a9d7e7fedf59404df46a0f72c0caef.js": "/precache-manifest.d8a9d7e7fedf59404df46a0f72c0caef.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.feda3ce7.chunk.css.map": "/static/css/main.feda3ce7.chunk.css.map",
+    "static/css/main.36836275.chunk.css.map": "/static/css/main.36836275.chunk.css.map",
     "static/js/2.6749dbef.chunk.js.LICENSE.txt": "/static/js/2.6749dbef.chunk.js.LICENSE.txt",
     "static/media/Landing.css": "/static/media/mobile_blob.df04e6ca.svg",
     "static/media/Coding.css": "/static/media/toronto.2ce107be.jpg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.963817d1.js",
     "static/js/2.6749dbef.chunk.js",
-    "static/css/main.feda3ce7.chunk.css",
-    "static/js/main.86e7cee7.chunk.js"
+    "static/css/main.36836275.chunk.css",
+    "static/js/main.766231d1.chunk.js"
   ]
 }

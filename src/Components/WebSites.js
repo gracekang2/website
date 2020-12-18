@@ -75,7 +75,7 @@ const WebProjects = [
         <h5>JavaScript/jQuery, SQL, C# Web Methods, Microsoft Access</h5>
         <p>
           This is also a project that I made while I worked at Scotiabank,
-          unofficially titled UserMatrix. It is essentialally a{" "}
+          unofficially titled UserMatrix. It is essentially a{" "}
           <b>JavaScript library</b>, with minimal dependencies, for use in other
           webpages within ScotiaBank (for example, I used it in one of my bulk
           editors). The JS library essentially generates highly customizable,{" "}

@@ -29,14 +29,18 @@
 
 #landingTextDiv {
   display: flex;
-  font-size: 32px;
+  font-size: 24px;
   flex-grow: 1;
   padding: 50px;
-  color: white;
+  color: black;
   text-align: left;
-  font-family: "VT323", monospace;
   margin-top: 40px;
-  text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
+}
+
+.landingText {
+  background-color: rgba(255,255,255,0.4);
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
 #landingTextDiv span {

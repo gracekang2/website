@@ -125,6 +125,15 @@
 #workTile1.expanded,
 #workTile2.expanded {
   padding: 30px 30px;
+  background-image: none;
+}
+
+#workTile1.expanded {
+  background-color: lightblue;
+}
+
+#workTile2.expanded {
+  background-color: lightgray;
 }
 
 #workTile1:hover,

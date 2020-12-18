@@ -11,12 +11,12 @@ export default class Landing extends React.Component {
           </div>
           <div id="landingTextDiv">
             <span>
-              hello world!<span role="img" aria-label="emoji">✨</span>
+              <span className="landingText">hello world!<span role="img" aria-label="emoji">✨</span></span>
               <br />
-              my name is Grace.
+              <span className="landingText">my name is Grace.</span>
               <br />
               <br />
-              let's get to know eachother!
+              <span className="landingText">let's get to know eachother!</span>
               <br />
               <br />
               <SVGLink
