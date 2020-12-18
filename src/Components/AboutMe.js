@@ -9,11 +9,6 @@ export default class AboutMe extends React.Component {
       height: 4,
     },
     {
-      src: "./AboutMeImages/IMG_2287-min.JPG",
-      width: 3,
-      height: 4,
-    },
-    {
       src: "./AboutMeImages/IMG_6880-min.jpg",
       width: 3,
       height: 4,
@@ -22,26 +17,6 @@ export default class AboutMe extends React.Component {
       src: "./AboutMeImages/15.jpg",
       width: 3,
       height: 4.5,
-    },
-    {
-      src: "./AboutMeImages/12.jpg",
-      width: 3,
-      height: 4,
-    },
-    {
-      src: "./AboutMeImages/3.jpg",
-      width: 3,
-      height: 4,
-    },
-    {
-      src: "./AboutMeImages/11.jpg",
-      width: 3,
-      height: 4,
-    },
-    {
-      src: "./AboutMeImages/5.jpg",
-      width: 3,
-      height: 4,
     },
     {
       src: "./AboutMeImages/7.jpg",
@@ -55,6 +30,11 @@ export default class AboutMe extends React.Component {
     },
     {
       src: "./AboutMeImages/2.jpg",
+      width: 3,
+      height: 4,
+    },
+    {
+      src: "./AboutMeImages/IMG_2287-min.JPG",
       width: 3,
       height: 4,
     },
@@ -89,126 +69,41 @@ export default class AboutMe extends React.Component {
           Hometown:
         </span>
         <span className="aboutMeAns">Toronto, Canada <span role="img" aria-label="emoji">🍁</span></span>
-        {this.state.currentBook ? (
-          <>
-            <br />
-            <br />
-            <span className={this.props.BackgroundColour + " aboutMeCategory"}>
-              Currently Reading... <span role="img" aria-label="emoji">💭</span>
-            </span>
-            <span className="aboutMeAns">
-              {this.state.currentBook.title_without_series},{" "}
-              {this.state.currentAuthor}
-              <a
-                href="https://www.goodreads.com/user/show/114484403-grace"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ color: "#551A8B" }}
-              >
-                <svg
-                  style={{
-                    width: "24px",
-                    height: "24px",
-                    marginLeft: "6px",
-                    marginBottom: "-5px",
-                  }}
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"
-                  />
-                </svg>
-              </a>
-            </span>
-          </>
-        ) : (
-          <>
-            <br/>
-            <br/>
-            <span className={this.props.BackgroundColour + " aboutMeCategory"}>
-              Currently Reading... <span role="img" aria-label="emoji">💭</span>
-            </span>
-            <span className="aboutMeAns">
-              {" "}
-              {" "}
-              <a
-                href="https://www.goodreads.com/user/show/114484403-grace"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ color: "#551A8B" }}
-              >
-                <svg
-                  style={{
-                    width: "24px",
-                    height: "24px",
-                    marginLeft: "6px",
-                    marginBottom: "-5px",
-                  }}
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"
-                  />
-                </svg>
-              </a>
-            </span>
-          </>
-        )}
         <br />
         <br />
         <hr />
         <div id="aboutMeDesc">
           <p>
-            Welcome to my website <span role="img" aria-label="emoji">😺</span>! My name is
+            I'm
             <b className={this.props.LandingColour}> Grace </b>
-            and I'm a third year{" "}
-            <b className={this.props.LandingColour}>Computer Science</b> student
+            , and I'm currently a third year{" "}
+            Computer Science student
             at the{" "}
-            <b className={this.props.LandingColour}>University of Waterloo.</b>
+            University of Waterloo. Welcome to my website <span role="img" aria-label="emoji">😺</span>!
             <br />
-            <br />
-            Speaking in terms of my technical interests -- while most of my
-            experience is in full-stack software engineering, I'm mostly
-            interested in backend development! I would love any opportunity to
-            grow my skillset in that area of Computer Science. For more
-            information about my skillset or past technical experiences, you can
-            head over to my skills summary or my coding experience section.
-            <br />
+            <br/>
+            I have interned at <span className={this.props.LandingColour}>Wish</span> and <span className={this.props.LandingColour}>Scotiabank</span> in the past, 
+            and will be heading back to Wish as a SWE intern in Winter 2021 to continue sharpening my skills.
+            While I am still exploring different fields of computer science, I am looking for opportunities that are educationally challenging, but also fulfilling. 
+            I am starting to realize that I would like to spend my time creating meaningful technology, and I want my work to reflect that!
+            <br/>
             <b>
               I am currently looking for an internship opportunity for{" "}
               <b>
                 <span className={this.props.LandingColour}> Summer 2021</span>
               </b>
-              , so I would love to chat!
+              , so I would love to chat :)
             </b>
             <br />
+            <br/>
+            Speaking in terms of my technical interests, I am mostly
+            interested in backend development, though I have experience on the full-stack. For more
+            information about my skillset or past technical experiences, you can
+            head over to my skills summary or my coding experience section.
+            <br /> 
             <br />
-            Let me also tell you a little more about me! Here are a few of my
-            favourites...
-            <br />
-          </p>
-          <ol>
-            <li>
-              <b className={this.props.LandingColour}>book - </b> Norwegian Wood by Haruki Murakami
-            </li>
-            <li>
-              <b className={this.props.LandingColour}>movie - </b> A Beautiful
-              Mind
-            </li>
-            <li>
-              <b className={this.props.LandingColour}>artists - </b> Daniel
-              Caesar, Khalid and Rich Brian
-            </li>
-          </ol>
-          <p>
-            I also love to spend time with my loved ones (especially my dog),
-            read, and travel! Some of my favourite places that I've visited are
-            Quebec City and California, but South Korea is definitely my top
-            travel destination for all the delicious street food. If you scroll
-            down, you'll find pictures of me and my friends, but also of my dog
-            <span role="img" aria-label="emoji">🐶</span>! His name is Teddy and my family adopted him in 2016.
+            Other than math and computer science, I love to take electives in english and psychology. If I didn't go into computer science, I probably 
+            would have become an english major or a therapist. I also love to travel, read and spend time with my loved ones!
             <br />
           </p>
         </div>
