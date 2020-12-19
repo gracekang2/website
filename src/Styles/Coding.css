@@ -107,7 +107,7 @@
 }
 
 /* Work Tiles */
-#workTilesWrapper {
+#workTilesWrapper, .projectsRow {
   display: flex;
   justify-content: space-between;
 }
@@ -115,7 +115,7 @@
 #workTile1,
 #workTile2 {
   width: 43%;
-  border-radius: 5px;
+  border-radius: 2px;
   padding: 90px 30px;
   color: white;
   font-family: "M PLUS Rounded 1c", sans-serif;
@@ -159,6 +159,39 @@
 
 .workCaption {
   font-size: 18px;
+}
+
+.projectTile {
+  display: inline-block;
+  padding: 5px;
+  border-radius: 2px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 43%;
+  color:white;
+}
+
+.projectTile:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+.projectTitleBlock {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.projectDescriptionBlock {
+  padding: 5px;
+}
+
+.techBadge {
+  margin-right: 3px;
+  border-radius: 5px;
+  padding-left: 3px;
+  padding-right: 3px;
+  font-size: 12px;
 }
 
 /* MEDIA QUERIES FOR SCALING */

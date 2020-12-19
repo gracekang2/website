@@ -1,6 +1,7 @@
 import React from "react";
-import WebSites from "./WebSites";
-import Games from "./Games";
+import Projects from './Projects'
+// import WebSites from "./WebSites";
+// import Games from "./Games";
 import EcoStore from "./EcoStore";
 import WorkExperience from "./WorkExperience";
 
@@ -14,14 +15,12 @@ export default class CodingExperience extends React.Component {
           Color={this.props.LandingColour}
           BackgroundColor={this.props.BackgroundColor}
         />
-        <h2 className={this.props.LandingColour}>web projects</h2>
-        Use the <b>left and right arrows</b> to read about some of the web tools that I
-        created while working as a full stack developer at Scotiabank!
-        <br />
-        <br />
-        <WebSites />
-        <h2 className={this.props.LandingColour}>eco-store</h2>
-        <EcoStore />
+        <h2 className={this.props.LandingColour}>projects</h2>
+        {/* <WebSites /> */}
+        <Projects/>
+
+        {/* <h2 className={this.props.LandingColour}>eco-store</h2> */}
+        {/* <EcoStore /> */}
         {/* <h2 className={this.props.LandingColour}>coin run</h2>
         <Games /> */}
       </div>
