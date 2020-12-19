@@ -33,6 +33,8 @@ export default class App extends React.Component {
     });
   }
 
+  OnLinkClick() {}
+
   render() {
     return (
       <div className="app">

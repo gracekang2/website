@@ -1,77 +1,42 @@
 import React from "react";
-import Gallery from "react-photo-gallery";
 
 export default class AboutMe extends React.Component {
-  photos = [
-    {
-      src: "./AboutMeImages/IMG_1280-min.JPG",
-      width: 3,
-      height: 4,
-    },
-    {
-      src: "./AboutMeImages/IMG_6880-min.jpg",
-      width: 3,
-      height: 4,
-    },
-    {
-      src: "./AboutMeImages/15.jpg",
-      width: 3,
-      height: 4.5,
-    },
-    {
-      src: "./AboutMeImages/7.jpg",
-      width: 3,
-      height: 4,
-    },
-    {
-      src: "./AboutMeImages/9.jpg",
-      width: 3,
-      height: 4,
-    },
-    {
-      src: "./AboutMeImages/2.jpg",
-      width: 3,
-      height: 4,
-    },
-    {
-      src: "./AboutMeImages/IMG_2287-min.JPG",
-      width: 3,
-      height: 4,
-    },
-    {
-      src: "./AboutMeImages/1.jpg",
-      width: 3,
-      height: 4,
-    },
-  ];
-
   state = {};
 
   render() {
     return (
       <div id="aboutMe">
         <h1 className={this.props.LandingColour}>about me</h1>
-        <span className={this.props.BackgroundColour + " aboutMeCategory"}>
-          Name:
-        </span>
-        <span className="aboutMeAns">Grace Kang <span role="img" aria-label="emoji">🤠</span></span>
-        <br />
-        <br />
-        <span className={this.props.BackgroundColour + " aboutMeCategory"}>
-          Program:
-        </span>
-        <span className="aboutMeAns">
-          3A Computer Science, University of Waterloo <span role="img" aria-label="emoji">🦆</span>
-        </span>
-        <br />
-        <br />
-        <span className={this.props.BackgroundColour + " aboutMeCategory"}>
-          Hometown:
-        </span>
-        <span className="aboutMeAns">Toronto, Canada <span role="img" aria-label="emoji">🍁</span></span>
-        <br />
-        <br />
-        <hr />
+        <div id="aboutmepic-mobile-div">
+          <img src="./AboutMeImages/15_square.jpg" id="aboutmepic-mobile"/>
+        </div>
+        <table>
+          <tr>
+            <td id="piccell">
+              <img src="./AboutMeImages/15_square.jpg" id="aboutmepic"/>
+            </td>
+            <td>
+            <span className={this.props.BackgroundColour + " aboutMeCategory"}>
+              Name:
+            </span>
+            <span className="aboutMeAns">Grace Kang <span role="img" aria-label="emoji">🤠</span></span>
+            <br />
+            <br />
+            <span className={this.props.BackgroundColour + " aboutMeCategory"}>
+              Program:
+            </span>
+            <span className="aboutMeAns">
+              3A Computer Science, University of Waterloo <span role="img" aria-label="emoji">🦆</span>
+            </span>
+            <br />
+            <br />
+            <span className={this.props.BackgroundColour + " aboutMeCategory"}>
+              Location:
+            </span>
+            <span className="aboutMeAns">Toronto, Canada <span role="img" aria-label="emoji">🍁</span></span>
+            </td>
+          </tr>
+        </table>
         <div id="aboutMeDesc">
           <p>
             I'm
@@ -107,9 +72,6 @@ export default class AboutMe extends React.Component {
             <br />
           </p>
         </div>
-        <hr />
-        <h1 className={this.props.LandingColour}>some pictures!</h1>
-        <Gallery photos={this.photos}></Gallery>
       </div>
     );
   }
