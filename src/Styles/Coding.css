@@ -107,7 +107,7 @@
 }
 
 /* Work Tiles */
-#workTilesWrapper, .projectsRow {
+#workTilesWrapper {
   display: flex;
   justify-content: space-between;
 }
@@ -161,14 +161,25 @@
   font-size: 18px;
 }
 
+.projectsRow {
+  display: flex;
+}
+
 .projectTile {
   display: inline-block;
   padding: 5px;
   border-radius: 2px;
   margin-right: 10px;
   margin-bottom: 10px;
-  width: 43%;
+  width: 31%;
   color:white;
+  vertical-align: top;
+  
+}
+
+.projectTileImg {
+  width: 100%;
+  border-radius: 2px;
 }
 
 .projectTile:hover {
@@ -192,26 +203,34 @@
   padding-left: 3px;
   padding-right: 3px;
   font-size: 12px;
+  display: inline-block;
 }
 
 /* MEDIA QUERIES FOR SCALING */
 @media (max-width: 1200px) {
+  .projectTile img {
+    max-width: 70%;
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+  }
+
   #workTile1,
-  #workTile2 {
+  #workTile2, .projectTile {
     width: 42%;
   }
 }
 
 @media (max-width: 1000px) {
   #workTile1,
-  #workTile2 {
+  #workTile2, .projectTile {
     width: 40%;
   }
 }
 
 @media (max-width: 800px) {
   #workTile1,
-  #workTile2 {
+  #workTile2, .projectTile {
     width: 38%;
   }
 }
@@ -221,6 +240,22 @@
   #workTile2 {
     width: 90%;
     margin-bottom: 10px;
+  }
+
+  .projectTile {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .projectsRow {
+    display: block;
+  }
+
+  .projectTile img {
+    max-width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #workTilesWrapper {
