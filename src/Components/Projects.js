@@ -16,7 +16,7 @@ export default class Projects extends React.Component {
             <ProjectTile color="#bebccb" badgeColor="#8d89a3" title="Live ASL Alphabet Translator" tech={["Python", "fastai + PyTorch", "OpenCV"]} description={
                 <>
                   A command line program that takes in live video feed from a user's webcam, and recognizes + translates static ASL alphabet signs. This program 
-                  is built on a deep learning model, trained using a homemade dataset, which achieved over 99% accuracy in training. <br/>
+                  is built on a deep learning model, trained using a homemade dataset, which achieved 97% accuracy in training. <br/>
                 </>
             } image="./Images/asl.gif"
             />
