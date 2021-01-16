@@ -49,8 +49,7 @@ export default class AboutMe extends React.Component {
             <br/>
             I have interned at <span className={this.props.LandingColour}>Wish</span> and <span className={this.props.LandingColour}>Scotiabank</span> in the past, 
             and will be heading back to Wish as a SWE intern in Winter 2021 to continue sharpening my skills.
-            While I am still exploring different fields of computer science, I am looking for opportunities that are educationally challenging, but also fulfilling. 
-            I am starting to realize that I would like to spend my time creating meaningful technology, and I want my work to reflect that!
+            I am still exploring different fields of computer science, but in general, I am interested in opportunities that are both educationally challenging and exciting!
             <br/>
             <b>
               I am currently looking for an internship opportunity for{" "}
@@ -64,11 +63,9 @@ export default class AboutMe extends React.Component {
             Speaking in terms of my technical interests, I am mostly
             interested in backend development, though I have experience on the full-stack. For more
             information about my skillset or past technical experiences, you can
-            head over to my skills summary or my coding experience section.
-            <br /> 
-            <br />
-            Other than math and computer science, I love to take electives in english and psychology. If I didn't go into computer science, I probably 
-            would have become an english major or a therapist. I also love to travel, read and spend time with my loved ones!
+            head over to my skills summary or my coding experience section. Other than math and computer science, 
+            I love to take electives in subjects like English and psychology. One of my favorite courses that I've 
+            taken in university is an English course on modernist literature! 
             <br />
           </p>
         </div>

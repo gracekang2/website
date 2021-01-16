@@ -263,7 +263,7 @@ export default class SkillSummary extends React.Component {
           </span>{" "}
           Click{" "}
           <a
-            href="https://drive.google.com/file/d/1zKcTM5nLaAz3D3-SnyRnoPI__lCORjF3/view?usp=sharing"
+            href="https://drive.google.com/file/d/1K4l_MydekAvCdULXKgtMx6hXh2yEM8F5/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             style={{ color: "#551A8B" }}

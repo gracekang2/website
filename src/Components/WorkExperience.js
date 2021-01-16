@@ -53,20 +53,19 @@ export default class WorkExperience extends React.Component {
               </p>
               <ul className="workTile1">
                 <li className="workTile1">
-                  Integrating with Stripe's payments API to implement a CVV
-                  recollection flow, with the goal of increasing payment security.
+                Implementing a new CVV recollection payments flow by integrating with Stripe’s API, 
+                successfully decreasing the number of fraud purchases made through hacked accounts.
                 </li>
                 <li className="workTile1">
-                  Building out a brand new chargeback pipeline for PrimeiroPay, using a listener webhook, to 
-                  maintain accurate charge data.
+                  Engineering a new risk decision pipeline to allow high value users to continue shopping 
+                  after a chargeback event, increasing gross merchandise value and user retention.
                 </li>
                 <li className="workTile1">
-                  Adding support for shipping only refunds, through Wish's
-                  chatbot, for GB, EU and CA, to decrease total refunds.
+                  Piloting the creation of a new combined shipment details page to provide detailed last mile 
+                  tracking information, which is currently being used by 1800+ users per hour.
                 </li>
                 <li className="workTile1">
-                  Implementing a new risk decision experiment and various pre-auth rules to 
-                  increase user security and increase GMV.
+                  Improving charge data accuracy by building out a webhook and new chargeback pipeline for PrimeiroPay.
                 </li>
               </ul>
             </>
@@ -98,7 +97,7 @@ export default class WorkExperience extends React.Component {
                 backend and frontend development.
                 <br />
                 <br/>
-                For more details about these projects, please see the Web
+                For more details about some of projects, please see the 
                 Projects section below!
               </p>
             </>
